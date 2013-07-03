@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!-- IE8 兼容 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>分享给弹出框</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/vdisk.css" type="text/css" rel="stylesheet"/>
+<script src="../js/ie_png.js" language="javascript"></script>
+<script src="../js/jquery-1.4.2.min.js" language="javascript"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+$(function(){
+//对html标签添加的id属性，只为页面切换展示。可自行进行修改 删除。
+	$("#share_to_weibo").click(function(){
+		$(this).addClass('current').siblings('.toggle_btn').removeClass('current');
+		$('#group_select_data').hide();
+		$('#select_user_data').show();
+	});
+	$("#share_to_group").click(function(){
+		$(this).addClass('current').siblings('.toggle_btn').removeClass('current');
+		$('#group_select_data').show();
+		$('#select_user_data').hide();
+	});
+});
+</script>
+
+	<div class="share_warp">
+		<div class="share_toggle">
+			<a class="toggle_btn first current" id="share_to_weibo">分享到微博</a>
+			<a class="toggle_btn last" id="share_to_group">分享到群组</a>
+		</div>
+		
+		<div class="share_publisher">
+			<div id="group_select_data" style="display:none">
+				<div class="selected_warp">
+					<ul  class="selected_con">
+						<li>
+							<span>群组1</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+						<li>
+							<span>群组2</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="select_group">
+					<span class="select_input">
+						<input type="text" name="" class="s_textb" value="选择群组" onfocus="if(this.value==this.defaultValue){ this.value='';$(this).css('color','#454545'); }" onblur=" if(this.value==''){this.value=this.defaultValue;$(this).css('color','#BDBDBD');}" />
+					</span>
+					<div class="select_down">
+						<div class="arrow_down">▼</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="select_user_data">
+				<div class="select_user_type">选择用户类别：<span><input type="radio" name="user_type" checked="checked" />指定用户</span><span><input type="radio" name="user_type" />指定好友分组</span></div>
+				<div class="select_user">
+					
+					<ul class="selected_con">
+						<li>
+							<span>用户1</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+						<li>
+							<span>张三</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+						<li>
+							<span>张三</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+						<li>
+							<span>张三</span>
+							<a href="javascript:;" class="x_close" title="删除" >×</a>
+						</li>
+					</ul>
+					
+					<!-- 添加用户的输入框：应在js中控制，未选择用户时，输入框的长度应为width:100% ，默认在css中设置长度为124px-->
+					<input type="text" name="" class="" value="+ 添加用户" title="+添加用户" onfocus="if(this.value==this.defaultValue){ this.value='';$(this).css('color','#454545'); }" onblur=" if(this.value==''){this.value=this.defaultValue;$(this).css('color','#BDBDBD');}" />
+				</div>
+			</div>
+			
+			<div class="input_con">
+				<textarea class="s_textb">说点什么</textarea>
+			</div>
+		  
+		  	<div class="btn_con">
+				<a href="javascript:void(0)" class="g_btn">分享</a>
+			</div>
+		</div>
+	</div>
+	
+    
+</body>
+</html>

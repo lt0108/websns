@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+
+/**skin.css**/
+.bg_index{ background:#462c22;}      /********$ @@@@@@@@@@@@@@@@@@@**********/
+.warp{ background:none;} 
+.content { background-image: url("../images/repeat_bg_y.png");background-repeat: repeat-y;}/***2$**/
+.r_cont,.r_vote,.s_bg_r { background:#322017; }     /********3$ @@@@@@@@@@@@@@@@@@@**********/
+.rl_cont,.rl_cont2,.r2_cont,.m_vote,.s_bg_rl,.s_bg_rl_curr .current { background:#322017; }   /*********4$ @@@@@@@@@@@@@@@@@@@*********/
+
+.box_mod_contraler a { background: #C09181;}
+.box_mod_contraler a:hover{ background: #3D2922;}
+/*左侧目录hover*/
+.h_menu_a a:hover,.h_menu_a a.current,.l_box03 ul li:hover, .l_box04 ul li:hover, .l_box03 ul li .current, .l_box04 ul li .current, .v_menu li:hover, .v_menu li.current {background:#3d2922;}/*********5$ @@@@@@@@@@@@@@@@@@@*********/
+
+
+		/*头部*//*********6$ @@@@@@@@@@@@@@@@@@@*********/
+.header_warp,.n_active { background:url(../images/nav_bg.png) repeat-x ; /*url(../images/nav_bg2.png) repeat-x;*/}
+.n_active{ background:#ccc url(../images/nav_bg.png) repeat-x ; }/*当前选中模块*/
+
+
+
+/*链接文字：主链接a,次链接b*/
+a, .s_linka a , a.s_linka,a.blue03,.blue03,.text_linka,.s_func1:hover{ color:#85593b;} /*********7$ @@@@@@@@@@@@@@@@@@@*********/
+.s_linka_bg,.s_linka_bg_h:hover, .zm_active,.h_list a:hover  { background:#85593b; color:#fff;}
+.s_linka_br { border-color:#85593b;}/**同7**/
+
+.s_linkb a, a.s_linkb, .text_linkb{	color:#6a493c;} /*********8$ @@@@@@@@@@@@@@@@@@@*********/
+.s_linkb_br{ border-color:#6a493c;}
+
+
+/*页面文字：主文字a,文字c,文字b. a-c-b 颜色相似，且逐渐变浅**/
+body, .s_texta, a.s_texta,.s_func1{	color: #a38d84;}/*主文字#33322E*/ /*********9$ @@@@@@@@@@@@@@@@@@@*********/
+.s_textc {  color: #6e584f;}/*转发框内、评论内容#fd856c;*/ /*********10$ @@@@@@@@@@@@@@@@@@@*********/
+.s_textb, a.s_textb {  color: #4f4441;}/*来自#677F82*/ /*********11$ @@@@@@@@@@@@@@@@@@@*********/
+
+/**突出显示的颜色:如我的群活跃度橘色**/
+.s_textd { color:#F16E50;}
+.s_textd_bg,.n_notice { background:#F16E50;}
+
+/**page中使用：选中和未选中页码的边框，还需修改配色**/
+.s_textb_br { border-color:#4f4441;} /**同11**/
+
+
+
+
+/*分割线，边框：sep_line微博列表更多下拉列表，g_tab01群讨论分割线，d_reply私信详细页输入框边框**/
+.s_linecolor, .g_tab01_line, .g_tab01_line2, .g_tab01_line4, .sep_line,.s_menu1_br li,.vc_tab,.g_tab01  { border-color:#4a3123;} /*********12$ @@@@@@@@@@@@@@@@@@@*********/
+	/*在右侧的分割线，等同于s_line2。较突出，白浅色背景时，色值较s_linecolor深；深色背景时，较s_linecolor浅*/
+.s_rlinecolor {border-color:#573D2E;}/*********13$ @@@@@@@@@@@@@@@@@@@*********/
+
+/**暂未使用*/
+.s_line2 { border-color:#4c261b; }
+		/*.s_vline { color: #3F6A71;} 调整好友分组，预览分组分隔线，未起作用*/
+
+/*小三角的背景和边框色**/
+.s_line_c { color:#4a3123;} /*********同12 *********/
+.s_bgcolor_c{ color:#281812;} /*********同14*********/
+
+/**背景颜色**/
+.s_bgcolor,.s_bgcolor_h:hover, .nabTag .tag01, .nabTag li a:hover, .nabTag2, .sc_menu, .sc_menu li , .sc_menu2,.sc_menu3{ background:#281812;}/*********14$ @@@@@@@@@@@@@@@@@@@*********/
+.nabTag, .sc_menu li a {border-color:#281812;}/*********同14 *********/
+
+.sc_menu li a:hover,.sc_menu .current, .nabTag2 .tag02 { background:#322017;/*同3 与中间区域颜色一致**/ border:#4a3123 1px solid;}/*********同12 *********/
+.nabTag li a {  border-color:#4a3123;}/*********同12*********/
+
+	/*背景2*/
+.s_bgtitle, .l_box04 h3,.l_box05 h3 ,.l_box06 h3,.rr_box03 h3,.rr_box04 h3,.rr_box05 h3,.rr_box06 h3,.rr_box07 h3,.rr_box08 h3 { background:#442D1F; }/*********同9 #a38d84*********/
+	/*背景3，特殊色，无内容的提示信息*/
+.s_bg3, .s_tipbg,.gp_errortip,.no_info,.s_bg4_curr .current { background:#FDFADC; /*border:1px solid #F2EEA8;*/}
+.s_bg3_c { color:#FDFADC;}
+	/*背景4，特殊色*/
+.s_bg4 { background:#fffaf6; border:#eddbc7 1px solid;}
+
+	/*背景5，聊天窗口*/
+.s_bg5 { background:#281812;}
+.s_bg5_br { border-color:#281812;}
+
+/**按钮**/
+.g_btn{	background:#e3ffd6; border:#d5f7c5 1px solid; color:#38990b!important;}
+.g_btn:hover,.g_btn a:hover { background:#80d300; border-color:#4fc000;  color: #FFFFFF;}
+
+.g_btn2{background:#f3f5f4; border:#e1e1e1 1px solid; color:#3e9bba;}
+.g_btn2:hover{ background:#f3f5f4; }
+
+
+.g_btn4,.g_btn4 a {	background:#e3ffd6; border:#d5f7c5 1px solid;  color:#38990b;}
+.g_btn4:hover,.g_btn4 a:hover { background:#80d300; border:#4fc000 1px solid;  color:#fff; }
+
+
+
+
+/**输入框*/
+.g_text,.g_text1, .g_text2, .g_text3, .g_text4, .g_text5, .g_text6,.v_text,.v_text2 {  border:#c6c6c6 1px solid; }
+
+
+
+
+
+/**头部黑白灰，不随模版变化***/
+.header ul li a.link,.n_notice {color:#fff;}
+.header ul li a.link:hover,.nav_current { color:#000!important;background:#fff;}/*头部模块hover、模块选中时*/
+.nr{  background:#ffffff; border-color:#bababa;	}
+.nr p a { color:#000}
+.nr p a:hover {background:#E6E6E6;}
+
+
+
+
+
+/****************************************模块内自留css样式****************************************/
+/*group.css*/
+.gh_l li:hover, .everymem:hover { background:#FFFFF0; }
+.g_notice { background:#fffaf6; border:#eddbc7 1px solid; }
+
+
+
+
+

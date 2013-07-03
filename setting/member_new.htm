@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+
+<title>招生组成员管理--新增成员</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/zb.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog.js?skin=discuz&t=template_blue"></script>
+</head>
+
+<body class="bg_index">
+<script>
+	$(function(){
+		$('#add_member_btn').click(function(){
+			$.dialog({
+				  title:'新增成员',
+				  content: $('.new_member_warp').html(),
+				  ok: function(){
+				},
+				cancelVal: '取消',
+				cancel: true
+			  });
+		});
+	})
+</script>
+	<!--warp开始处-->
+	<div class="warp">
+		<div class="new_member_warp" style="display:none">
+			<table cellspacing="0" cellpadding="0" class="r_tab_01">
+				<tr>
+					<th>学工号：</th>
+					<td>2005990101</td>
+				</tr>
+				<tr>
+					<th>姓名：</th>
+					<td>王小二</td>
+				</tr>
+				<tr>
+					<th>性别：</th>
+					<td>女</td>
+				</tr>
+				<tr>
+					<th>单位：</th>
+					<td>航空学院</td>
+				</tr>
+				<tr>
+					<th>人员类别：</th>
+					<td>在校教师</td>
+				</tr>
+				<tr>
+					<th>手机号：</th>
+					<td><input type="text" /><span class="tip_info">手机已验证</span></td>
+				</tr>
+				<tr>
+					<th>邮箱：</th>
+					<td><input type="text" /></td>
+				</tr>
+				<tr>
+					<th>招生组、成员类别：</th>
+					<td><input type="text" /></td>
+				</tr>
+			</table>
+			<div class="box_check">
+				<span><input type="checkbox" name="" checked="checked" class="mr5" />短信发送注册邀请码</span>
+				<span class="ml10"><input type="checkbox" name="" checked="checked" class="mr5"/>邮件发送注册邀请码</span>
+			</div>	
+		</div>
+    
+		<!--header_warp开始处-->
+		<div class="header_warp"></div>
+		<!--header_warp 结束处-->
+        
+        
+		<!--content 开始处-->
+ 		<div class="content">
+                    
+            <!-- 左侧 start -->
+			<div class="l_cont">
+            	                
+                <div class="l_box04">
+                	<h1 class="mt3"><img src="../images/f_ico001.gif" width="15" height="14" /><span>招生组成员管理</span></h1>
+					<ul>
+						<li><a class="current" href="javascript:void(0)">北京招生组</a></li>
+						<li><a class="" href="javascript:void(0)">江苏招生组</a></li>
+					</ul>
+                </div>                                               
+            </div>
+            <!-- 右侧 end -->
+            
+            <!-- 右侧 start -->
+			<div class="r_cont">
+            	
+                <div class="rlr_cont">
+                    <div class="rl_box01">
+						<div class="tab_menu mb10">
+							<ul class="nabTag">
+								<li><a href="member_manage.htm"><span>全部</span></a></li>
+								<li><a href="menber_new.htm"  class="tag01"><span>新增</span></a></li>
+							</ul>
+						</div>
+						<h3>
+							
+							<span>学工号<input type="text" /></span>
+							<span>姓名<input type="text" /></span>
+                        	<span>性别<select><option>男</option><option>女</option></select></span>
+							<span>单位<input type="text" /></span>
+							<a href="#" class="g_btn mb3">查询</a>
+						
+							
+                        </h3>
+						
+					</div>
+				   
+				    <div>
+						<table cellpadding="0" cellspacing="0" class="rc_tab01 list_table">
+							<tbody>
+								<tr class="data_sort">
+									<th style="width:4%"><input type="checkbox" /></th>
+									<th style="width:5%">序号</th>
+									<th>学工号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>单位</th>
+                                    <th>人员类别</th>                                 
+								</tr>
+		
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>张三</td>
+                                    <td>女</td>
+                                    <td>航天航空学院</td>
+                                    <td>招生组长</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>王小件</td>
+                                    <td>男</td>
+                                    <td></td>
+                                    <td>招生组长</td>
+								</tr>
+								
+						  </tbody>
+					  </table>
+					 
+					 <div class="table_center_btn"><a href="#" class="g_btn" id="add_member_btn">增加</a></div>
+
+				 </div>
+                   
+                                        
+                </div>
+                <!-- rl end -->
+
+            </div>
+            <!-- 右侧 end -->
+            
+    	</div>
+		<!--content 结束处-->
+        
+		<!--footer 开始处-->
+			<div class="footer">
+				<div class="footer_cont">
+					<p><a href="#">用户协议</a> <a href="#">小筑故事</a> <a href="#">关于我们</a></p>
+					<p class="copyright">版权所有2011 &copy; 清华大学计算机与信息管理中心</p>
+				</div>		
+			</div>
+		<!--footer 结束处-->
+        
+	</div>
+	<!--warp 结束处-->
+    
+</body>
+</html>

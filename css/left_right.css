@@ -1,0 +1,123 @@
+/******* 左侧透明区域内容样式 *******/
+/**左侧每块总体控制(增加左侧新模块时，需增加新class,如.l_box07)**/
+.l_box01,.l_box02,.l_box03,.l_box04,.l_box05,.l_box06 { /*width:140px; margin:10px auto;*/ overflow:hidden; clear:both; zoom:1; padding: 0 10px;}
+
+
+/* ①l_box01 头像名字块*/
+.l_avatar img.bigavatar { width:140px; height:140px; overflow:hidden; clear:both; }
+/**新版群管理页使用，未更新到main2中**/
+.l_info { margin-top:5px; text-align:left; line-height:20px;}
+.l_avatar .uname { font-size:14px; font-weight:bold;}
+.l_avatar .uname:hover { text-decoration:none;}
+
+/* ②l_box02 好友、关注、粉丝、群数显示块*/
+.user_atten { overflow:hidden;margin: 5px 0 0;}
+.user_atten a { display:block;}
+.user_atten li {text-align: center; width: 30px; display:inline-block; float:left;  border-right-style: solid;border-right-width: 1px;margin: 0 4px 0 0;padding: 0 4px 0 0;}
+.user_atten li strong { display:block;  font-family:tahoma;  font-size:18px;  font-weight:400; margin:0 0 4px;}
+
+
+/* ③ ④l_box03,l_box04 两块基本一致，均为显示列表，不同：l_box04显示标题h3*/
+.l_box03 ul li,.l_box04 ul li { height:25px; line-height:25px; margin:1px 0; clear:both; }
+.l_box03 ul li a,.l_box04 ul li a { /*width:140px;  padding-left:25px;*/ display:block; text-decoration:none; }
+
+.l_box03 ul li a span{ margin-left:5px; }
+
+
+
+/* l_box04,l_box05, l_box06  标题h3样式*/
+.l_box04 h3,.l_box05 h3 ,.l_box06 h3 { height:22px; line-height:22px; /*background:#f3e7f5;*/ overflow:hidden; clear:both; zoom:1; font-weight:normal;margin:7px 0;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-ms-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;
+}
+/**新版群管理页使用，未更新到main2**/
+.l_box04 h3 .title_txt { float:left; font-weight:bold; margin-left:5px;}
+
+/**⑤  l_box05 首页，热门投票块***/
+.l_box05 ul,.rr_box05 ul { margin-top:5px; overflow:hidden; clear:both; zoom:1; }
+.l_box05 ul li,.rr_box05 ul li { clear:both; line-height:20px;  word-break: break-all;  word-wrap: break-word;margin-left: 5px;}
+.l_box05 ul li a,.rr_box05 ul li a {  /*color:#323232;*/ text-decoration:none;}
+.l_box05 ul li a:hover,.rr_box05 ul li a:hover { text-decoration:underline; }
+.l_box05 ul li span,.rr_box05 ul li span {   margin-left:5px; }
+
+
+/* ⑥  l_box05内的  l_box_pic_list  左侧小头像显示，“最近来访类” */
+.l_box_pic_list { margin:8px 0 0; padding-left:5px; overflow:hidden; zoom:1; clear:both; }
+.l_box_pic_list li { width:25px; float:left; display:inline; /* margin-bottom:8px;*/ overflow:hidden; }
+.l_box_pic_list li img { width:25px; height:25px; overflow:hidden; }
+.l_box_pic_list li p { height:22px; line-height:22px; text-align:center; }
+
+
+
+/******* 左侧新增 l_box07 群列表 *******/
+.l_box07 { width:140px; margin:0 auto; overflow:hidden; clear:both; zoom:1; }
+
+.l_box07 h3 { height:25px; line-height:25px; overflow:hidden; clear:both; text-align:left; }
+.l_box07 h3 span { font-size:14px; margin-left:5px; /*color:#333;*/ }
+
+.l_box07 ul { margin:1px 0; clear:both; }
+.l_box07 ul li { height:22px; line-height:22px; margin-bottom:1px;}
+.l_box07 ul li a { width:120px; height:22px; line-height:22px; padding-left:20px; display:block; text-decoration:none; }
+
+
+/******* 左侧透明区域内容样式  结束 *******/
+
+
+
+
+
+
+/****** 右部右侧样式 （整体） *******/
+.rr_box01,.rr_box02,.rr_box03,.rr_box04,.rr_box05,.rr_box06,.rr_box07,.rr_box08 {  margin:0 10px 10px; overflow:hidden; clear:both; zoom:1; }
+
+.rr_box03 h3,.rr_box04 h3,.rr_box05 h3,.rr_box06 h3,.rr_box07 h3,.rr_box08 h3 { height:22px; line-height:22px; /*background:#f3e7f5;*/ overflow:hidden; clear:both; zoom:1; font-weight:normal; margin:0!important;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-ms-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;
+}
+
+/* rr_box_cont 右侧基本样式 */
+.rr_box_cont { margin:8px 2px; overflow:hidden; clear:both; zoom:1; text-align: left;}
+
+.r_box_img { width:40px; overflow:hidden; float:left; }
+.r_box_img img { width:40px; height:40px; margin-top:3px; }
+
+.r_box_cont { margin-left:50px; _margin-left:45px; }
+.r_box_cont_line {overflow:hidden; /*border-bottom:1px dotted #B6CDC5*/ border-bottom-style:dotted; border-bottom-width:1px;}
+.r_box_cont p { line-height:20px; text-align:left; vertical-align:middle; }
+.r_box_cont p a img { margin-top:-2px; }
+
+.r_box_l_yellow {overflow:hidden; }
+.r_box_l_yellow img { margin-left:85px; }
+
+.r_box_info { *margin-top:-6px; margin-top: 5px; /*background:#FFFACC;*/ overflow:hidden; clear:both; border-style:solid; border-width:1px;}
+.r_box_info p { margin:3px 10px; line-height:16px; }
+.r_box_info .b_arrow { margin-left:80px;}
+
+
+/*** rr_box_pic_list  “最近来访”类 头像排列样式 ***/
+.rr_box_pic_list { margin:10px 0 0 5px; overflow:hidden; zoom:1;  }
+.rr_box_pic_list li { width:40px; float:left; display:inline; margin-bottom:5px; overflow:hidden; }
+.rr_box_pic_list li img { width:40px; height:40px; overflow:hidden; }
+.rr_box_pic_list li p { line-height:22px; height:22px;text-align:center; }
+.rr_box_pic_list .mr16{margin-right:16px;}
+
+
+/* rr_s_title 搜索右侧标题 */
+.rr_s_title { width:215px; height:30px; line-height:30px; margin-left:10px; margin-bottom:10px; border-bottom-style:dotted; border-bottom-width:1px; overflow:hidden; zoom:1; clear:both; }
+.rr_s_title span { width:40%; display:block; float:left; }
+.rr_s_title span img { margin-top:-4px; margin-left:10px; }
+.rr_s_title span a { margin-left:5px; }
+
+
+/************右部右侧结束****************/
+
+
+

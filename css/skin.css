@@ -1,0 +1,334 @@
+
+/**换肤变化图片，只在skin.css中总共5处，涉及到4张图片，使用  “./images/” 路径：bg_index，warp，l_box02等，nr p a:hover  **/
+
+/* 换肤相关图片①、②*/
+.bg_index { /*background:#6FB24B url(./images/bg2.jpg) repeat fixed;*/ clear:both; }
+
+.warp{ /*background:url(./images/body_bg_zi.jpg) 50% 0 no-repeat;*/ overflow:hidden; zoom:1; clear:both; line-height:1; }
+
+/* content */
+.content { width:950px; margin:0 auto 0; /*background:url(../images/layer_bg4.png) repeat;*/ overflow:hidden; clear:both; min-height:700px; margin-top: 50px;} 
+.content_map { width:1000px; margin:0 auto; overflow:hidden; clear:both; padding-top:50px;  }
+
+.l_cont { width:170px; padding:15px 0; overflow:hidden; zoom:1; float:left; }
+.r_cont,.r2_cont { width:780px; background:#fff; overflow:hidden; zoom:1; float:right; min-height:700px;}
+.rl_cont { width:535px; background:#fff; padding:15px 0; text-align:center; float:left; overflow:hidden; min-height: 1000px; }
+.rr_cont { width:245px; padding:15px 0;  text-align:left; float:left; overflow:hidden; }
+
+
+.rl_cont2 { width:705px; float:left; overflow:hidden; min-height:800px;}
+
+
+/**组合：
+1、左中右三栏(首页)：l_cont + r_cont(rl_cont+rr_cont):170+780(535+245)=950  透明content(左)、浅紫r_cont(右)、白色rl_cont(中)
+2、两栏，左窄右宽(个人设置)：l_cont + r2_cont:170+780=950   透明content(左)、白色同rl_cont(宽右)
+3、两栏，左宽右窄(群列表): rl_cont2 + rr_cont:705+245=950   浅紫s_bg_main(content 右)、白色同rl_cont(宽左)---深色系中，中白和右紫使用统一颜色？？
+*/
+
+
+
+
+/* 左侧菜单,头部下拉列表ico */
+
+.left_icon {margin-right: 5px;vertical-align: middle;display: inline-block;width: 20px;height: 20px;background-image: url("../images/ico_left_menu.gif");background-repeat: no-repeat;}
+
+.icon_at { background-position:3px 2px;}
+.icon_comment { background-position:3px -22px;}
+.icon_mail { background-position:3px -49px;}
+.icon_collect { background-position:3px -74px;}
+.icon_weibo { background-position:3px -100px;}
+.icon_blog { background-position:3px -124px;}
+.icon_lweibo { background-position:3px -1108px;}
+.icon_vdisk { background-position:3px -272px;}
+.icon_photo{ background-position:3px -148px;}
+.icon_poll{ background-position:3px -199px;}
+.icon_msg{ background-position:3px -22px;}
+.icon_group{ background-position:3px -376px;}
+.icon_user{ background-position:3px -651px;}
+.l_cont .opt { font-size:12px; margin-right:5px;}
+
+
+/****header区域样式*****/
+/* 换肤相关图片③*/
+.header_warp { width:100%; height:34px; line-height:34px; /*background:url(./images/nav_bg2.png) repeat-x; clear:both;*/ zoom:1; position:fixed; left:0; top:0; z-index:9999; margin-bottom:15px; }
+
+.header{ margin:0 auto; height:33px; line-height:33px; width:950px; text-align:left; clear:both; _overflow:hidden; }
+
+.logo{ float:left; width:141px; height:34px;  display:inline; overflow:hidden; zoom:1; }
+
+
+
+/**换肤相关图片④。左侧hover或选中状态下的背景图，在skin.css中nr p a:hover也使用此路径“./images/left_nav_hover2.png”**/
+.l_box02 ul li a:hover,.l_box03 ul li a:hover,.l_box04 ul li a:hover,.l_box07 ul li a:hover 
+{ /*background:url(./images/left_nav_hover2.png) repeat!important; color:#fff;*/ text-decoration:none; }
+.l_box02 ul li a.current,.l_box03 ul li a.current,.l_box04 ul li a.current,.l_box07 ul li a.current 
+{/* background:url(./images/left_nav_hover2.png) repeat!important; color:#fff;*/ text-decoration:none; }
+
+
+
+/*左导航条设置样式*/
+.nav{ float:left; margin-left:25px; *margin-left:20px; display:inline; /*width:325px;*/ }
+.nav li{ float:left; /*font-size:14px; font-weight:bold;*/ display:inline-block; _display:inline; margin-right:2px; position:relative; }
+.nav li a.link{ height:34px; line-height:34px; /*color:#fff;*/ padding:0 12px; display:block; _display:inline-block; text-decoration:none;}
+.nav li a:hover{ /*color:#3F013B; background:#fff;*/ text-decoration:none; }
+
+.n_active { /*background:#68125b;*/ }
+
+
+.n_notice { width:16px; height:16px; line-height:16px; display:inline-block; /*background:url(../images/main_nav_notice_bg.gif) no-repeat; color:#fff;*/border-radius: 3px; float:left; text-align:center; margin:9px 0 0 -10px }
+.n_notice_num { font-size:14px; margin-left:35px;}
+
+
+
+
+/*右导航条样式设置*/
+.m_nav_bg { height:36px; line-height:36px; float:right; zoom:1; _position:relative; _left:-5px; }
+
+
+/* m_nav */
+.m_nav { height:36px; line-height:36px; clear:both; zoom:1; _float:right; }
+.m_nav li { float:left; width:50px; text-align:center; line-height:33px; /*color:#fff;*/ *display:inline; position:relative; }
+.m_nav li a { /*color:#fff;*/ text-decoration:none; clear:both; }
+.m_nav li a:hover { /*color:#3f013b;*/ text-decoration:none; }
+
+
+/* bt */
+.bt { _width:50px; _overflow:hidden; text-align:center; }
+.bt a { width:50px; height:36px; line-height:36px; display:block; /*background:url(../images/hot_nav_jt.gif) 39px center no-repeat; color:#147087;*/ text-decoration:none; clear:both; text-align:center; }
+.bt a:hover { /*background:#fff url(../images/hot_nav_jt_hover.gif) 39px center no-repeat; color:#3f013b;*/ text-decoration:none; }
+
+.bt a img { margin-right:5px; }
+
+
+.nr{ display:none; border-style: solid;border-width: 0 1px 1px; position:absolute; z-index:9999;  min-width:110px;  text-align:center; top:34px; right:-1px;  _overflow:hidden;  line-height: 28px; font-size:12px; font-weight:normal;}
+
+.nr p { _height:30px; _line-height:30px; text-align:left; white-space: nowrap;}
+.nr p:hover { cursor:pointer; }
+.nr p a { /*color:#454545!important;*/ text-decoration:none;display:block;line-height:25px;padding:0 5px;}
+.nr p a:hover { text-decoration:none; /*background:url(./images/left_nav_hover2.png) repeat;*/}
+
+.nr p a img { margin-right:5px; }
+
+.nav_current { /*color:#3f013b!important; background:#fff!important;*/ text-decoration:none; clear:both; }
+
+/*搜索框设置*/
+/*zc:修改 margin-top，使搜索框不贴地*/	
+.search{margin-right:15px; float:right; background:url(../images/search_bg1.jpg) no-repeat top left; margin-top:7px; *margin-left:20px!important; width:185px; line-height:23px; height:23px; display:inline;}
+.search .search_text{ height:23px; border:0;  line-height:23px; background:none; width:145px; padding-left:5px;}	
+.search .search_btn{ height:21px; width:26px; border:none; margin-left:1px; background:none; cursor:pointer;}
+
+
+
+
+
+/*****warp_footer样式设置******/
+.footer { overflow:hidden; zoom:1; clear:both; line-height:1; }
+.footer_cont { width:950px;  background:url(../images/layer_bg4.png) repeat;  margin:10px auto; text-align:center;  padding:5px 0; }
+.footer_cont p { line-height:24px; }
+.footer_cont p a{ /*color:#68125B;*/ margin:0 10px; }
+.copyright { /*color:#333;*/}
+
+/*****反馈意见******/
+.feed_con{margin: 0 0 15px;}
+.feed_con p{padding-bottom: 10px; text-align: left;}
+.feed_con textarea{/*border: 1px solid #AEAEAE;*/  width:400px;  overflow-y:auto; height:150px;}
+
+/**zc:2011-11-18 头部悬浮效果***/
+.global_header
+{
+	z-index: 9998;
+	height: 37px;
+	width: 100%;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	position: fixed;
+	left: 0;
+	top: 2px;
+}
+
+
+/* 按钮样式（分享给按钮调整，去掉height:20px;修改line-height:22px;）
+ */
+.g_btn,.g_btn a { line-height:22px;vertical-align: middle; text-align:center; padding:0 10px; _padding:5px 10px 0; display:inline-block; text-decoration:none;
+/*background:#e3ffd6; border:#d5f7c5 1px solid; color:#38990b;*/ 
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;
+}
+.g_btn:hover,.g_btn a:hover { /*background:#80d300; border:#4fc000 1px solid; color:#fff;*/ text-decoration: none;}
+.g_btn img { margin-top:-2px; _margin-top:0; }
+
+/* btn2 */
+.g_btn2{ height:20px; line-height:20px; text-align:center; padding:0 5px; display:inline-block; text-decoration:none;
+/*background:#f3f5f4; border:#e1e1e1 1px solid; color:#3e9bba;*/
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-ms-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;
+}
+.g_btn2:hover{ /*background:#f3f5f4;*/ }
+
+
+
+/* btn3 */
+.g_btn3,.g_btn3 a { width:57px; height:24px; line-height:24px; text-align:center; display:block; background:url(../images/btn_fb.gif) no-repeat; text-decoration:none; }
+
+
+/* btn4 20120516新增 */
+.g_btn4,.g_btn4 a { line-height:20px;vertical-align: middle; text-align:center; padding:0 10px; _padding:5px 10px 0; display:inline-block;text-decoration:none;
+/*background:#e3ffd6; border:#d5f7c5 1px solid;  color:#38990b;*/
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;
+}
+.g_btn4:hover,.g_btn4 a:hover { /*background:#80d300; border:#4fc000 1px solid;  color:#fff;*/ }
+.g_btn4 img { margin-top:-2px; _margin-top:0; }
+
+
+
+
+/*zc:20111227，用于显示没有相关信息时**/
+.no_info{ margin: 50px auto 0;	/*background: none repeat scroll 0 0 #FDFADC; border: 1px solid #F2EEA8;*/  padding: 20px 0 25px; text-align: center; width: 405px;}
+
+
+
+
+
+
+/**nabTag：页标签，与首页一致、个人主页**/
+.nabTag { height:28px; clear:both; overflow:hidden; zoom:1; _margin-left:0px; position:relative; top:1px; /*border-bottom:#f4f4f4 2px solid;*/border-bottom-style:solid; border-bottom-width:2px;}
+.nabTag li { float:left; display:inline; _display:inline-block; margin:3px 3px 0 0; }
+.nabTag li a { height:24px; line-height:24px; display:block; _display:inline-block; text-decoration:none; cursor:pointer; /*border-top:#e1e1e1 1px solid; border-left:#e1e1e1 1px solid;*/ border-style:solid; border-width:1px;}
+.nabTag li a span { height:24px; line-height:24px; display:block; _display:inline-block; padding:0 15px; cursor:pointer; /*border-right:#e1e1e1 1px solid;*/  text-align:center;} 
+.nabTag li a:hover { /*background:#f4f4f4;*/ font-weight:bold; }
+.tag01 { /*background:#f4f4f4!important;*/ font-weight:bold; }
+
+
+/* 二级目录样式sc_menu,当前为current ，首页、群详细页使用*/
+.sc_menu { margin:0 0 10px; /*background:#f4f4f4;*/ clear:both;  overflow:hidden; zoom:1; }
+.sc_menu li { height:30px; line-height:30px; /*background:#f4f4f4;*/ float:left; display:inline-block; }
+.sc_menu li a { /*border-color:#f4f4f4;*/ border-style:solid; border-width:1px; height:22px; line-height:22px; padding:0 8px; margin-top:3px; margin-left:3px; display:inline-block;  text-decoration:none; }
+.sc_menu li a:hover { height:22px; line-height:22px; /*background:#fff;*/  text-decoration:none; }
+.sc_menu .current {  line-height:22px; /*background:#fff;*/  /*border:#e1e1e1 1px solid;*/ text-decoration:none; }
+
+.more_btn {height:20px; line-height:20px; /*background:#fff;*/ display:block; _display:inline-block; margin-left:2px; padding:0 10px 0 10px; cursor:pointer; /*color:#186e85;*/}
+.moreArrow {	width:10px;	height:7px;	padding-left:4px;	margin-top:-1px;}
+	/**更多下拉列表**/
+.morelist,.morelist1 {min-width:120px; border:1px solid #ccc;	position:absolute;	display:none;	z-index:10;	background:#fff; max-height:200px; overflow-y:auto;}
+.morelist ul,.morelist1 ul {margin:0;	padding:0;}
+.morelist ul li a,.morelist1 ul li a {display:block;	padding:4px 10px;	text-decoration:none;	cursor:pointer;line-height:18px;}
+.morelist ul li a:hover,.morelist1 ul li a:hover { background:#F3F3F3!important;}
+.morelist ul li.sep_line,.morelist1 ul li.sep_line {border-bottom-style:solid; border-bottom-width:1px; display: block;margin:5px; *margin:0 5px 10px;padding: 0px;position: relative;}
+
+
+/* 标签2 现只有群公告列表 */
+.nabTag2 { height:28px; border-top-style:solid; border-top-width:1px;clear:both; overflow:hidden; zoom:1; _margin-left:0px; }
+.nabTag2 li { float:left; display:inline; _display:inline-block; margin:3px 5px 0; }
+.nabTag2 li a { height:24px; line-height:24px;  display:block; _display:inline-block; text-decoration:none; cursor:pointer; }
+.nabTag2 li a span { height:24px; line-height:24px;  display:block; _display:inline-block; margin-left:2px; padding:0 19px 0 15px; cursor:pointer; }
+.nabTag2 li a:hover { text-decoration:none; font-weight:bold;  }
+.nabTag2 .tag02 { height:24px; line-height:24px;  display:block; _display:inline-block; font-weight:bold; text-decoration:none;}
+
+
+
+/*****分割线：首页、个人主页****/
+
+/*评论列表分割线*/
+.g_tab01_line { width:96%; height:0px; margin:0 auto; border-bottom-style: solid; border-bottom-width: 1px; }
+
+/*微博列表分割线，单灰线*/
+.g_tab01_line2 { margin:10px auto;  border-bottom-style: solid; border-bottom-width: 1px; }
+/*群列表筛选框分割线，点点*/
+.g_tab01_line3 { margin:0 auto; border-top-style: dotted; border-top-width: 1px;}
+/*与g_tab01_line2相似，margin值不同，不同页面css中margin值不一样*/
+.g_tab01_line4 { margin:5px 8px; *margin:10px 8px 5px; border-bottom-style: solid; border-bottom-width: 1px; }
+
+
+/**输入框*/
+.g_text, .g_text1, .g_text2, .g_text3, .g_text4, .g_text5, .g_text6 {padding-top:5px; overflow-y: auto;text-indent:2px;line-height:16px;background:#fff url(../images/g_input_bg.gif) repeat-x;}
+
+/*好友、通知左侧分割线*/
+.f_line {  border-top-style: solid;border-top-width: 1px; height: 1px; margin: 5px auto;width: 140px;}
+
+/*含分*/
+.s_menu1_br li { border-top-style:solid; border-top-width:1px;}
+
+
+/*保存成功或错误的提示信息*/
+.error { background: url("../images/warning.png") no-repeat scroll 0 3px transparent;font-size: 12px;padding-left: 20px; display:inline-block; color: #FF0000;line-height: 20px;}
+.success {background: url("../images/success.gif") no-repeat scroll 0 3px transparent;font-size: 12px;padding-left: 22px; display:inline-block;}
+.paginator {display:none;}
+
+
+.g_btn1, .g_btn1 a {   line-height:22px; text-align:center; padding:0 10px; display:inline-block; text-decoration:none;vertical-align: middle;min-width: 35px;
+background:#f3f5f4; border:#e1e1e1 1px solid; color:#73797c;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+-o-border-radius:2px;
+-ms-border-radius:2px;
+-khtml-border-radius:2px;
+border-radius:2px;}
+.g_btn1:hover,.g_btn1 a:hover { text-decoration:none;}
+
+
+
+
+
+/**发送私信时，好友自动填充下拉列表***/
+.username_lists {border:1px solid #E3E3E3;position:absolute;display:none;background:#fff;z-index:99999;}        
+.username_lists ul {margin:0;	padding:0;}
+.username_lists ul li a {display:block;	padding:5px 10px;	text-decoration:none;	cursor:pointer;	color:#666;	font:15px;}
+.username_lists ul li a:hover { background:#F3F3F3!important;}
+.username_lists ul li.sep_line {border-bottom: 1px dotted #DDD;display: block;height: 12px;margin: 0px 5px;padding: 0px;position: relative;top: -5px;}		
+
+
+/**@好友时，自动填充下拉列表**/
+#search{font-size:14px;}
+#search .k{padding:2px 1px;width:120px;}
+#search_auto{border:1px solid #817FB2;position:absolute;display:none;overflow:hidden;width:134px;z-index:99999;}
+#search_auto li{background:#FFF;text-align:left;border-bottom:1px solid #817FB2;z-index:1;position:relative;}
+#search_auto li.cls{text-align:right;}
+#search_auto li a{display:block;padding:5px 6px;cursor:pointer;color:#000000;}
+#search_auto li a:hover{background:#1874CD;text-align:none;color:#FFFFFF}
+#show{width:134px;height:20px;line-height:20px;background:#F5FFFA;position:absolute;border:1px solid #817FB2;text-align:center;font-size:12px;display:none;z-index:99999;}
+
+
+
+
+
+/**带背景色和边框色的箭头,两层重叠：微博列表转发或评论框， b_arrow默认为箭头向上的箭头**/
+	/*固定为白色背景，灰色边框，跟白色输入框结合的向上的箭头*/
+.w_bg_input{ border:1px solid #ccc; background:#fff;}
+.w_bg_input input ,.w_bg_input textarea{ background:#fff; border:none;}
+.w_bg_input .b_arrow em{ color:#ccc;}
+.w_bg_input .b_arrow span{ color:#fff;;}
+
+.b_arrow { position:absolute;z-index:1; *display:inline; margin-top:-8px;margin-top:-7px\0;margin-left: 15px;width: 22px;cursor: default;}
+.b_arrow * {font-family: "SimSun";overflow: hidden;font-size: 12px;line-height: 1.231;display: block;height: 12px;}
+.b_arrow span {margin: -11px 0 0;}
+
+	/*向左、向右箭头*/
+.b_arrow.arrow_left { margin-left: -12px;margin-top: 15px;}
+.b_arrow.arrow_left span {margin:-12px 0 0 2px;}
+.b_arrow.arrow_right { margin-left: 369px;margin-top: 15px;}
+.b_arrow.arrow_right span {margin:-12px 2px 0 0;}
+
+/**带背景色的箭头*/
+.s_arrow {display: inline-block;width: 7px;height: 4px;margin: 0 0 0 5px;overflow: hidden;vertical-align: middle;font-size: 12px;line-height: 12px;}
+.s_arrow em {display: inline-block;font-family: "SimSun";margin: -7px 0 0 -2px;*margin:-20px 0 0 -2px; margin-top:-6px\0;}
+.s_arrow_turn .s_arrow em{  margin:0 0 0 -2px;*margin:-13px 0 0 -2px;_margin:-13px 0 0 -2px;margin-top:1px\0;}/*向上的箭头*/
+
+
+/*单选、复选框*/
+.s_checkbox,.s_radio { vertical-align: -2px;margin-right: 3px;}

@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+
+<title>招生教师注册待审核</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/zb.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog.js?skin=discuz&t=template_blue"></script>
+</head>
+
+<body class="bg_index">
+<script>
+	$(function(){
+		$('.reg_check_btn').click(function(){
+			$.dialog({
+				  title:'审核注册教师',
+				  content: $('.reg_check_alert').html()
+			 });
+		});
+	})
+</script>
+
+<div class="reg_check_alert" style="display:none">
+	<table class="info_tab">
+		<tr>
+			<th>工作证号</th>
+			<td>2005990101</td>
+			<th>姓名</th>
+			<td>张三</td>
+			<th>性别</th>
+			<td colspan="3">女</td>
+		</tr>
+		<tr>
+			<th>籍贯</th>
+			<td>湖南</td>
+			<th>民族</th>
+			<td>汉</td>
+			<th>政治面貌</th>
+			<td colspan="3">党员</td>
+		</tr>
+		<tr>
+			<th>毕业高中</th>
+			<td>北京市海淀区清华附中</td>
+			<th>最高学历</th>
+			<td>研究生</td>
+			<th>大学毕业院校</th>
+			<td colspan="3">清华大学</td>
+		</tr>
+		<tr>
+			<th>工作单位</th>
+			<td>清华大学计算机信息与技术管理中心</td>
+			<th>职务</th>
+			<td>在校教师</td>
+			<th>职称</th>
+			<td colspan="3">高级职称</td>
+		</tr>
+		<tr>
+			<th>手机号码</th>
+			<td>15210225584</td>
+			<th>办公电话</th>
+			<td>010-65841257</td>
+			<th>住宅电话</th>
+			<td>010-25484411</td>
+			<th>邮箱</th>
+			<td>test@test.com</td>
+		</tr>
+		<tr>
+			<th>第一志愿省份</th>
+			<td>湖北</td>
+			<th>第二志愿省份</th>
+			<td>北京</td>
+			<th>第三志愿省份</th>
+			<td colspan="3">内蒙古</td>
+		</tr>
+		<tr>
+			<th>个人主要社会兼职</th>
+			<td colspan="7">好莱坞有人专门做历史片海报的收购，再拍卖，价格不菲，一般都是几百美元一张，重要的要过千元，如果是某个特别电影的首映海报，价格会更高，电影演员尼古拉斯.凯奇有几张乔治.卢卡斯《星球大战》首映海报，拍卖价格居然达到百万美元</td>
+		</tr>
+		<tr>
+			<th>个人所获主要荣誉</th>
+			<td colspan="7">好莱坞有人专门做历史片海报的收购，再拍卖，价格不菲，一般都是几百美元一张，重要的要过千元，如果是某个特别电影的首映海报，价格会更高，电影演员尼古拉斯.凯奇有几张乔治.卢卡斯《星球大战》首映海报，拍卖价格居然达到百万美元</td>
+		</tr>
+	</table>
+	
+	<div class="table_center_btn">
+		<a href="#" class="g_btn">审核通过</a>
+		<a href="#" class="g_btn ml10">审核不通过</a>
+		<div class="link_change"><a href="#">上一条</a><span>2</span><a href="#">下一条</a></div>
+	</div>
+</div>
+
+	<!--warp开始处-->
+	<div class="warp">
+    
+		<!--header_warp开始处-->
+		<div class="header_warp"></div>
+		<!--header_warp 结束处-->
+        
+        
+		<!--content 开始处-->
+ 		<div class="content">
+                    
+            <!-- 左侧 start -->
+			<div class="l_cont">
+            	                
+                <div class="l_box04">
+                	<h1 class="mt3"><img src="../images/f_ico001.gif" width="15" height="14" /><span>招生教师注册审核</span></h1>
+					<ul>
+						<li><a class="current" href="javascript:void(0)">北京招生组</a></li>
+						<li><a class="" href="javascript:void(0)">江苏招生组</a></li>
+					</ul>
+                </div>                                               
+            </div>
+            <!-- 右侧 end -->
+            
+            <!-- 右侧 start -->
+			<div class="r_cont">
+            	
+                <div class="rlr_cont">
+                    <div class="rl_box01">
+						<div class="tab_menu mb10">
+							<ul class="nabTag">
+								<li><a href="register_uncheck.htm" class="tag01"><span>待审核</span></a></li>
+								<li><a href="register_checked.htm"><span>已审核</span></a></li>
+							</ul>
+						</div>
+						<h3>
+							<span>工作证号<input type="text" style="width:75px;" /></span>
+							<span>姓名<input type="text" style="width:75px;" /></span>
+                        	<span>审核状态<select><option>通过</option><option>不通过</option></select></span>
+							<span>招生年度<select><option>2013</option></select></span>
+							 <a href="#" class="g_btn mb3">查询</a>
+							 <a href="#" class="g_btn mb3 ml10">导出为Excel</a>
+                        </h3>
+					</div>
+				   
+				    <div>
+						<div class="table_multi_btn">
+                            <a href="#" class="g_btn">审核通过</a>
+                            <a href="#" class="g_btn">审核不通过</a>
+						</div>
+						
+						<table cellpadding="0" cellspacing="0" class="rc_tab01 list_table">
+							<tbody>
+								<tr>
+									<th style="width:4%"><input type="checkbox" /></th>
+									<th style="width:5%">序号</th>
+									<th>工作证号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>单位</th>
+                                    <th>第一志愿省份</th>
+                                    <th>招生年度</th>
+                                    <th>申请时间</th>
+									<th>操作</th>
+								</tr>
+		
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>张三</td>
+                                    <td>女</td>
+                                    <td>航天航空学院</td>
+                                    <td>内蒙古</td>
+                                    <td>2013</td>
+									<td>2013-07-02 16:08:00</td>
+									<td><a href="#" class="reg_check_btn">审核</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>王小件</td>
+                                    <td>男</td>
+                                    <td></td>
+                                    <td>内蒙古</td>
+                                    <td>2013</td>
+									<td>2013-07-02 16:08:00</td>
+									<td><a href="#" class="reg_check_btn">审核</a></td>
+								</tr>
+								
+						  </tbody>
+					  </table>
+					 
+					  <div class="page" num="21">
+                        	<p class="left ml10">
+                        		<span class="mr10">每页显示
+                        			<select id="pernum" name="pernum">
+									   <option value="1" class="search_page">20</option>
+									   <option value="2" class="search_page">40</option>
+									   <option value="3" class="search_page">60</option>
+									   <option value="4" class="search_page">80</option>
+									   <option value="5" class="search_page">100</option>
+	                        		</select>条
+                        		</span>
+                       		共有413条记录，共21页，当前是第1页</p>
+                        	
+                          	<p class="right mr10">
+                         		<span class="generalgray"><< 第一页</span>
+                                <span class="generalgray">< 上一页</span>
+                          		<span><a class="search_page" page="next" href="javascript:void(0)">下一页 ></a></span>
+                              	<span><a class="search_page" num="21" page="21" href="javascript:void(0)">最后页 >></a></span>
+                          		<span>第<input id="page" name="" type="text" class="page_txt mlr5" value="1">页</span>
+                                <input name="" type="button" value="跳转" class="search_page">
+                            </p>
+                     </div>
+
+				 </div>
+                   
+                                        
+                </div>
+                <!-- rl end -->
+
+            </div>
+            <!-- 右侧 end -->
+            
+    	</div>
+		<!--content 结束处-->
+        
+		<!--footer 开始处-->
+			<div class="footer">
+				<div class="footer_cont">
+					<p><a href="#">用户协议</a> <a href="#">小筑故事</a> <a href="#">关于我们</a></p>
+					<p class="copyright">版权所有2011 &copy; 清华大学计算机与信息管理中心</p>
+				</div>		
+			</div>
+		<!--footer 结束处-->
+        
+	</div>
+	<!--warp 结束处-->
+    
+</body>
+</html>

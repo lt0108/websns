@@ -1,0 +1,382 @@
+
+textarea { background:#fff;border: 1px solid #CCC;}
+
+
+
+/*左侧menu**/
+.l_list .lside_item {font-size: 14px; padding: 5px 9px 5px 12px;display: block;text-decoration: none;cursor: pointer; height:18px; line-height:18px;}
+.l_list a.current, .l_list .lside_item:hover {}
+.l_list h3 {padding: 15px 12px 8px;font-weight: bold;font-size: 12px;text-transform: uppercase;}
+.l_list b{display: inline-block;width: 18px;height: 18px;margin-right: 5px;background:url(../images/vd_sprite_contral.png) no-repeat -208px -20px;vertical-align: middle;}
+
+
+
+/**右侧网盘最外层*/
+.vdisk_warp{padding:0 20px;}
+
+/**右侧列表table以上，最外层*/
+.mod_header {text-align: left;}
+
+/**title:我的网盘*/
+.mod_filter_text h2{ font-famliy:"微软雅黑";font-size:22px;font-weight:bold;padding:20px 0;text-align:left;}
+
+/**网盘工作：包含左边操作、右边容量**/
+.box_mod_maintools { overflow:hidden; position: relative;}
+	
+	/**左边网盘操作*/
+.box_mod_contraler{ float:left;}
+.box_mod_contraler .for_folder{float:left;display:inline;margin-right:20px;}
+.box_mod_contraler .empty_all { position:absolute; right:0; top:0;}
+
+.box_mod_contraler .disable * { cursor:default;}
+.box_mod_contraler .disable span *{ opacity:0.35;}
+.box_mod_contraler a , .box_mod_contraler a.disable:hover{/* background:#E9E2F6;*/position:relative;display:inline-block;width:80px;height:20px;border:1px solid #fff;padding:4px 0;text-align:center;vertical-align:middle;}	
+.box_mod_contraler a.disable, .box_mod_contraler a.disable:hover {color: #D2D2D2;cursor: default; background:#F1F1F1;}
+.box_mod_contraler a:hover { /*background:#E4C4E9;*/}
+
+.box_mod_contraler span { display:inline-block;vertical-align:middle; line-height: 18px;}
+.box_mod_contraler span b{display: inline-block;width: 18px;height: 18px;margin-right: 5px;background-image:url(../images/vd_sprite_contral.png);background-repeat: no-repeat;vertical-align: middle;}
+.icon_upload{ background-position: -138px 0;}
+.icon_newfolder { background-position: -161px 0;}
+.icon_reflash { background-position: -253px -1px;}
+.icon_recycle { background-position: -69px -59px;}
+.icon_return { background-position: -23px -58px;}
+.icon_restore { background-position: -47px -59px;}
+.icon_clear { background-position: -92px -58px;}
+.icon_download { background-position: 0 -57px;}
+.icon_move { background-position: -117px -59px;}
+
+	/**右边容量**/
+.box_mod_capacity{float:right;}
+.box_mod_capacity span { display:block; height:19px;line-height:19px;}
+.box_mod_capacitybar {display:inline-block;width:136px;height:11px;background:url(../images/vd_capacitybars.png);overflow:hidden;vertical-align:middle;}
+.box_mod_capacitybar .capabar {height:100%;text-align:left;}
+.box_mod_capacitybar span {width:50%;height:11px; margin:0;display:block;background:url(../images/vd_capacitybars.png) no-repeat 0 -25px;}
+
+/**目录位置显示**/
+.location_warp { overflow:hidden; margin:5px auto;}
+.box_mod_location{ height:30px;line-height:30px;float:left;}
+/*搜索文件*/
+.search_file { }
+.search_file select { height:24px;line-height:24px; margin-right:8px;}
+.search_file .search_input { width:185px; display:inline-block; border: 1px solid #CCC;background-image: url('../images/search-button-new.gif');background-repeat: no-repeat;
+background-position: 157px 1px; vertical-align: middle; }
+
+.search_file input {padding-left: 3px; width: 160px;border: none;background:#fff;display: inline-block;float: left;line-height: 20px;height: 20px; *line-height: 18px;*height: 18px;}
+.search_file .s_btn { width: 20px;height: 20px;display: inline-block;vertical-align: middle;position: relative;float: left;cursor:pointer;}
+
+/**类型筛选操作**/
+.mod_sieve_wrap{ position:relative;border: 1px solid #CCC;border-bottom:none;border-radius: 3px 3px 0 0;}
+.mod_sieve_wrap a {overflow: hidden;width: 30px;height: 30px;float: left;margin-right: 10px;display: block;padding: 5px;}
+.mod_sieve_wrap .active_data a.current, .mod_sieve_wrap .active_data a:hover{background: url(../images/vd_sieve_bg3.png) no-repeat 0 0;}
+.mod_sieve_wrap a span {background: url(../images/vd_sieve_icon.png) no-repeat 0 0;display: inline-block;width: 30px;height: 30px;}
+.mod_sieve_wrap .sieve_file span {background-position: -253px -5px;}
+
+.mod_sieve_wrap .sieve_pic span {background-position: -5px -5px;}
+.mod_sieve_wrap .sieve_word span {background-position: -67px -5px;height:31px;}
+.mod_sieve_wrap .sieve_music span {background-position: -130px -6px;}
+.mod_sieve_wrap .sieve_video span {background-position: -192px -5px;}
+.mod_sieve_wrap .sieve_other span {background-position: -315px -5px;}
+.mod_sieve_wrap .sieve_return span {background-position: -375px -5px;}
+.mod_sieve_wrap .return_no .sieve_return span {background-position: -430px -5px;}
+
+.mod_sieve_wrap .return_no a { cursor:default;}
+.mod_sieve_wrap .main_border{ border-right:1px solid #ccc;}
+.mod_sieve_wrap .sieve_cate {overflow: hidden;padding: 5px;float: left;}
+
+/**文件列表table**/
+.r_border_none { border-right:none!important;}
+.nocursor{ cursor:default;}
+.mod_datalist_warp{ min-height:800px;height:800px;border:1px solid #ccc;border-radius: 0 0 3px 3px;margin-bottom:10px;}
+.mod_list_tab { width:100%; border-collapse:collapse; }
+.mod_list_tab tbody tr{ height: 46px; line-height: normal;}
+.mod_list_tab thead tr{cursor: pointer;background:#f1f1f1;}
+.mod_list_tab tbody tr:hover,tr.marked { background: #F7F7F7;}
+
+.mod_list_tab tr th { height:30px; line-height:30px; text-align:left;  font-weight:bold; border-right:#d3d7d8 1px solid; padding-left:5px;border-bottom:1px solid #ccc; }
+.mod_list_tab tr td { height:20px; line-height:20px; text-align:left;  padding:5px;  }
+
+	/**table的标题**/
+.mod_list_tab .vd_order_up{ background:url(../images/hot_nav_jt.gif) 35px center no-repeat;}
+.mod_list_tab .vd_order_down{ background:url(../images/hot_nav_jt.gif) 35px center no-repeat;}
+
+.mod_list_tab .sort_check { width: 30px;padding-left: 10px!important;}
+.mod_list_tab .sort_name{ background-position:45px;}
+.mod_list_tab .sort_size{ background-position:35px; width:54px;}
+.mod_list_tab .sort_time{ background-position:35px; width:108px;}
+.mod_list_tab .sort_status{ background-position:35px; width:52px;}
+.mod_list_tab .sort_user{ background-position:45px;}
+.mod_list_tab .sort_num{ background-position:60px; width: 70px;}
+
+	/**文件名内容**/
+.sort_name_detail{ overflow:hidden;}
+.sort_name_pic{ position:relative; float:left; width:39px;margin-top: 5px;}
+.sort_name_intro { float:left; width:inherit;}
+.sort_name_detail a { }
+.sort_name_tool { overflow:hidden;}
+
+
+
+
+	/**筛选显示不同类型文件的图标,中图标，32px**/
+.vd_icon {width: 32px;height: 32px;background: url(../images/vd_icon_32.png) no-repeat;line-height: 0;font-size: 0;display: inline-block;}
+.vd_cd {	background-position: 0 -970px}
+.vd_csv {	background-position: 0 -210px}
+.vd_doc {	background-position: 0 -252px}
+.vd_docx {	background-position: 0 -42px}
+.vd_dvd {	background-position: 0 0}
+.vd_eif {	background-position: 0 -126px}
+.vd_exe {	background-position: 0 -168px}
+.vd_flv {	background-position: 0 -84px}
+.vd_folder {	background-position: 0 -523px}
+.vd_folder_mobile {	background-position: 0 -406px}
+.vd_folder_page {	background-position: 0 -487px}
+.vd_folder_picture {	background-position: 0 -294px}
+.vd_html {	background-position: 0 -369px}
+.vd_music {	background-position: 0 -1012px}
+.vd_other {	background-position: 0 -445px}
+.vd_pdf {	background-position: 0 -598px}
+.vd_pic {	background-position: 0 -559px}
+.vd_ppt {	background-position: 0 -846px}
+.vd_txt,.vd_rtf {	background-position: 0 -722px}
+.vd_video {	background-position: 0 -682px}
+.vd_wps {	background-position: 0 -640px}
+.vd_xls {	background-position: 0 -928px}
+.vd_zip,.vd_rar {	background-position: 0 -888px}
+.vd_yun {	background-position: 0 -1170px}
+.vd_book {	background-position: 0 -1091px}
+.vd_book_collection {	background-position: 0 -1134px}
+.vd_photo {	background-position: 0 -1208px}
+.vd_apk {	background-position: 0 -1248px}
+.vd_folder_music {	background-position: 0 -1294px}
+.vd_folder_video {	background-position: 0 -1335px}
+.vd_ipa {	background-position: 0 -1376px}
+.vd_swf {	background-position: 0 -1423px}
+.vd_xap {	background-position: 0 -1467px}
+.vd_mp3_mask {	background-position: 0 0}
+.vd_pic_mask {	background-position: 0 -34px}
+.vd_vedio_mask {	background-position: 0 -68px}
+
+
+
+
+
+/*********************“分享给”弹出框***************************/
+.share_warp { margin-left:10px; margin-top:20px;width:500px; background:#fff; text-align:left}
+
+/*“分享给”切换头部*/
+.share_toggle { line-height: 44px; width1: 478px; text-align: center; vertical-align: middle; overflow: visible; margin-bottom: 15px; 
+background-color: #fff;border: 1px solid #b0b1b2; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; height: 34px; position:relative;}
+	/*切换按钮，及当前选中状态*/
+.share_toggle .toggle_btn {color: black;display: block;float: left;width: 248px;height: 24px;line-height: 24px;margin: 0;padding: 5px 1px;text-align: center;cursor: pointer;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;position: relative;text-decoration: none;}
+.share_toggle .toggle_btn.current {border-right: 1px solid #B0B1B2;border-left: 1px solid #B0B1B2;padding: 5px 0px; background:#ccc;}
+.share_toggle .first.current {border-left: none;padding: 5px 1px 5px 0;}
+.share_toggle .last.current{border-right: none;padding: 5px 1px 5px 0;}
+
+
+/*主体部分*/
+.share_publisher { width:500px; overflow:hidden;}
+
+/*选择群组：输入框和下拉箭头*/
+.select_group { overflow:hidden; zoom:1;  }
+.select_group .select_input { float:left;width: 200px;padding: 0;border: none;}
+.select_group .select_input input{ width: 194px;padding: 6px 0 6px 6px;margin: 0;height: 14px;line-height: 14px;outline: none;border: 1px solid #CCC;border-right: none;}
+
+	/*下拉箭头*/
+.select_group .select_down { float: left;cursor: pointer;background-color: #EEE;border: 1px solid #CCC;padding: 7px;height:12px; *margin-top:1px;
+-webkit-border-top-right-radius: 4px;
+-webkit-border-bottom-right-radius: 4px;
+-moz-border-radius-topright: 4px;
+-moz-border-radius-bottomright: 4px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;}
+.select_group .select_down .arrow_down { /*position: relative;*/ margin-top:5px;*margin-top:12px;top: -1px;border-style: solid dashed dashed;border-color: transparent;border-top-color: white;display: -moz-inline-block;display: inline-block;font-size: 0;height: 0;line-height: 0;width: 0;border-width: 3px 3px 0;padding-top: 1px;left: 0px;
+border-width: 4px 4px 0;border-top-color: #666;}
+
+	/*被选中的条目*/
+.selected_warp { overflow:hidden; zoom:1;}
+.selected_con { display: inline;clear: both;}
+.selected_con  li{ display: inline-block;float:left; margin:2px 5px 2px 0; background-color: #F5F5F5; border:1px solid #ccc;white-space: nowrap; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.selected_con  li span{ padding:4px 8px;display: inline-block;line-height: 16px;white-space: nowrap;border-right: 1px solid #CCC;}
+.x_close { color:#888;display: inline-block; margin:4px 3px 0 2px; vertical-align:top; border-radius:2px; font-size:14px; width:15px; height:15px; line-height:15px; text-align:center; font-family:tahoma,宋体,sans-serif;}
+.x_close:hover { background: #CCC;color: white;outline: 0 none;text-decoration: none;}
+
+/*选择用户：用户类别单选框和输入框*/
+.select_user_type { margin:10px 0;}
+.select_user_type input {  margin:0 5px; *margin:0;border:none; }
+
+.select_user { overflow: hidden;border: 1px solid #CCC;padding: 3px;}
+.select_user input{ width: 124px;display: inline;float: left;outline: none;border: none;padding: 0;line-height: 24px;height: 24px;margin-left: 10px;background:#fff;}
+
+/*textarea输入内容*/
+.input_con { padding:0 4px;  margin-top: 10px;}
+.input_con textarea { width:100%; padding:3px; margin: 0 -4px;resize:none; height:60px; overflow:hidden; overflow-y:auto;}
+
+/*分享按钮*/
+.btn_con { margin:10px 0; overflow:hidden;}
+.btn_con a.g_btn { float:right;}
+
+
+
+
+/**********************图片缩略图列表******************************/
+.v_pic_list { padding:20px 0 20px 20px;}
+.v_pic_list li {float: left;margin: 0 5px 5px 0;width: 130px;height: 180px;position: relative;border: 1px solid #fff;}
+.v_pic_list li:hover, .v_pic_list li.current { border: 1px solid #CCC;border-radius: 3px;}
+
+	/*图片*/
+.v_list_warp { text-align:center;position: absolute;height: 180px;}
+.v_list_warp .v_list_pic { padding: 22px 15px 2px 15px;text-align: center;overflow: hidden;position: relative;}
+.v_list_pic .pic_border {padding: 2px;border: 1px solid #e6e6e6;width: 94px;height: 94px;background-color: #fff;overflow: hidden;display: table-cell;*display:block;*font-size:84px;vertical-align: middle;text-align: center;}
+.v_list_pic .pic_border img { max-width: 94px;max-height: 94px; vertical-align: middle; }
+
+	/*图片名等文字说明*/
+.v_list_txt_warp { padding: 10px 3px;display: block;}
+.v_list_txt_warp .v_list_txt { height: 14px; line-height:14px;width: 124px;overflow: hidden;text-align: center;color: #666;cursor: pointer;display: block;}
+
+	/*对图片的操作工具*/
+.v_list_tool {height: 20px;position: absolute;left: -2px;width: 130px;}
+.v_list_tool a{float: right;padding: 2px 14px 2px 13px;display: inline-block; }
+.v_list_download { background-image:url(../images/vd_sprite_contral.png);background-repeat: no-repeat; background-position:-24px -17px; width:16px; height:16px; vertical-align:middle; display:inline-block;}
+.v_list_download:hover { background-position:-24px -35px;}
+
+
+/**********************保存到网盘弹出框******************************/
+.save_warp { width:380px; min-width: 350px; text-align:left; padding:12px; background:#fff;}
+
+/**新建文件夹**/
+.save_tree_txt { height:20px;}
+.inp { padding: 3px;background: #fff;border: 1px solid #d8dadb;color: #999;}
+.g_btn3 { height:22px; line-height:22px;}
+
+/**文件夹树最外层*/
+.save_tree_warp {border: 1px solid #ccc;padding: 10px;height: 235px;margin: 10px 0;/*width: 335px; */}
+.main_tree { padding-left: 5px;/*width: 330px;*/height: 210px;overflow-x: hidden;overflow-y: auto; width:100%}
+
+/**树的每一行分支**/
+.folder_in {float: left;overflow: hidden;width: 285px;padding: 2px 0 2px 5px; }
+	/**向下、向右、空白箭头**/	
+.folder_in .arrow_down, .folder_in .arrow_up, .folder_in .arrow_none, .folder_in .folder_icon {padding-bottom: 5px;float: left;overflow: hidden;width: 16px;height: 13px;display: inline-block;}
+.folder_in .arrow_down { background:url(../images/vd_sprite_contral.png) no-repeat -232px -38px;}
+.folder_in .arrow_up { background:url(../images/vd_sprite_contral.png) no-repeat -232px -20px;}
+.folder_in .folder_icon { background:url(../images/vd_sprite_contral.png) no-repeat -208px -20px;}
+
+.folder_in img{vertical-align:top}
+.folder_in img, .folder_in a {display: inline-block;padding-bottom: 5px;margin-left: 3px;*display:inline;*zoom:1;}
+.folder_in a:hover { text-decoration: none; cursor:pointer;}
+.folder_in a span {padding: 0 2px;display: inline-block;width: 240px;white-space: nowrap;overflow: hidden;}
+.folder_in .current { background-color: #eee; }
+
+/**按钮**/
+.btn { text-align:right;}
+
+
+/**分页*/
+.page2 { margin:10px 0;}
+.page2 a,.page2 span { margin:0 10px;}
+
+.vdisk_dialog2 { padding:5px; background-color:rgba(0, 0, 0, 0.2); *background-color: #ccc; background-color: #ccc\9; overflow:hidden; clear:both; zoom:1; }
+
+
+/* g_new_massage 会议、话题、添加群成员弹出框，外层*/
+.g_new_massage { overflow:hidden; clear:both; zoom:1; width:400px; background: none repeat scroll 0 0 #FFFFFF;  border: 1px solid #CCCCCC;}
+.g_new_massage h4 { height:28px; line-height:28px; background:#f4f4f4; border-top:#e1e1e1 1px solid; clear:both; overflow:hidden; zoom:1; }
+
+/* close_btn 会议*/
+.g_close_btn { width:14px; height:28px; float:right!important; margin-right:5px; line-height:28px; display:block; }
+.g_close_btn a { width:14px; height:28px; display:block; background:url(../images/v_close.gif) center center no-repeat; text-decoration:none; }
+.g_close_btn a:hover { text-decoration:none; background:url(../images/v_close.gif) center center no-repeat!important; }
+
+.upload_main {border: 1px solid #A7C5E2;height:228px;left:0;margin-bottom:5px;overflow-x:hidden;overfolw-y:auto;position:relative;top:0;margin: 10px;}
+
+/**更多下拉框**/
+.morelist {width:150px; border:1px solid #E3E3E3;	position:absolute;	display:none;	z-index:10;	background:#fff;}
+.morelist ul {margin:0;	padding:0;}
+.morelist ul li a {display:block;	padding:5px 10px;	text-decoration:none;	cursor:pointer;	color:#666;	font:15px;}
+.morelist ul li a:hover { background:#F3F3F3!important;}
+.listhovers { background:#F3F3F3!important;}
+.morelist ul li.sep_line {border-bottom: 1px dotted #DDD;display: block;height: 12px;margin: 0px 5px;padding: 0px;position: relative;top: -5px;}
+
+
+
+
+/*********文件预览详细页***********/
+/*左右两栏，左宽右窄*/
+.v_detail_page .content { background:#FAF5FB}
+.v_left{ width:719px;float:left; min-height:700px; background:#fff; text-align:left;border-right: 1px solid #DCDDDD;}
+.v_right { float:left; height:500px; width:230px; text-align:left;}
+
+.share_menu_link { padding:20px 0 10px 20px;}
+.share_menu_link span { padding:0 8px;}
+
+/**左侧，文件名称等基本信息*/
+.down_fileinfo { padding: 18px 20px 9px 20px;text-align: left;overflow: hidden;border-bottom: 1px solid #DCDDDD;}
+.down_filename { font-size:16px; font-weight:bold; line-height:22px; margin-top: 10px;}
+.down_filesize { font-size:12px; font-weight:normal; margin-left:5px;}
+.down_baseinfo { float:right; margin-top:10px;}
+
+/**左侧，文件内容*/
+.file_content { padding:10px;}
+
+/*无法提供预览的提示信息*/
+.v_nobrowser { border: 1px solid #EEE; margin:10px; padding:20px; text-align:center; font-size:22px;color: #CCC;line-height: 55px;font-weight: bold;}
+
+/*左侧，保存和下载按钮*/
+.download_btn { text-align:left; margin-top:10px; margin-bottom:10px;}
+.download_btn a { padding: 5px 20px;font-size: 16px;font-weight: bold; margin-left: 20px;}
+
+/*左侧，相关文档推荐*/
+.v_suggest { padding:50px 20px;}
+.v_suggest_title {margin: 0 0 5px 0;padding-left: 10px;font-size: 14px;font-weight: bold;line-height: 24px;}
+.v_suggest li {padding: 6px 10px;line-height: 18px;overflow: hidden;}
+.v_suggest_downtxt { float:right;}
+.v_suggest_downtxt span { font-weight: bold;margin-right: 5px;}
+.v_suggest .vd_icon16 { float:left;margin:0px;}
+
+	/*文档类型图标，16px小图标*/
+.vd_icon16 {	background: url(../images/vd_icon_16.png) no-repeat;	display: inline-block;	padding-left: 20px;	line-height: 18px;margin: 8px 1px 0 1px;}
+.vd_16cd {	background-position: 0 -1093px}
+.vd_16csv {	background-position: 0 -229px}
+.vd_16doc {	background-position: 0 -275px}
+.vd_16docx { background-position: 0 -46px}
+.vd_16dvd {	background-position: 0 0}
+.vd_16eif {	background-position: 0 -137px}
+.vd_16exe {	background-position: 0 -183px}
+.vd_16flv {	background-position: 0 -91px}
+.vd_16folder {	background-position: 0 -590px}
+.vd_16folder_mobile {	background-position: 0 -454px}
+.vd_16folder_page {	background-position: 0 -544px}
+.vd_16folder_picture {	background-position: 0 -321px}
+.vd_16folder_sina {	background-position: 0 -367px}
+.vd_16html {	background-position: 0 -411px}
+.vd_16music {	background-position: 0 -1139px}
+.vd_16other {	background-position: 0 -498px}
+.vd_16pdf {	background-position: 0 -679px}
+.vd_16pic {	background-position: 0 -633px}
+.vd_16ppt {	background-position: 0 -955px}
+.vd_16rar {	background-position: 0 -909px}
+.vd_16rtf {	background-position: 0 -863px}
+.vd_16txt {	background-position: 0 -817px}
+.vd_16video { background-position: 0 -771px}
+.vd_16wps {	background-position: 0 -725px}
+.vd_16xls {	background-position: 0 -1047px}
+.vd_16zip {	background-position: 0 -1001px}
+.vd_16apk {	background-position: 0 -1245px}
+.vd_16ipa {	background-position: 0 -1300px}
+.vd_16xap {	background-position: 0 -1352px}
+.vd_16swf {	background-position: 0 -1402px}
+.vd_16book { background-position: 0 -1192px}
+
+/*右侧分享者信息*/
+.share_info_txt{ padding:20px 0 20px 20px;}
+.v_person_info { padding: 0 20px 18px;}
+.v_person_info dt { float:left; display:inline;}
+.v_person_info dd { margin:0 0 0 60px; line-height:20px;}
+
+/*右侧模块，通用*/
+.v_right_module { padding:20px 0 0;margin: 0 20px; border-top: 1px dotted #ccc;}
+.v_right_module .title{ padding: 0 0 8px;}
+.v_right_module li { height:30px; line-height:24px;}
+	/*Ta的分享列表，单独样式*/
+.my_share { padding-top:0;padding-bottom: 10px;border: 0;}
+

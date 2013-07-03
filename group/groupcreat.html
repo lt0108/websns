@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>创建群</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/left_right.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet" />
+<link href="../css/g_new.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="bg_index g_list">
+	<div class="warp">
+		<!--header_warp开始处-->
+		<div class="header_warp">
+			<div class="header">
+				<!--logo开始处-->
+				<div class="logo"><a href="#"><img src="../images/logo.png" width="110" height="28" /></a></div>
+				<!--logo结束处-->
+				<!--nav开始处-->
+				<div class="nav">
+					<ul>
+						<li><a href="../index.html" class="link n_active">首页</a></li>
+						<li><a href="../p_index.html" class="link">个人主页</a></li>
+						<li><a href="../group_index.html" class="link">群</a></li>
+						<li><a href="../friends_index.html" class="link">朋友</a></li>
+						<li><a href="../information.html" class="link">应用</a></li>
+					</ul>
+				</div>
+				<!--nav结束处-->
+				<!--search 开始处-->
+				<div class="search">
+					<form>
+						<input type="text" name="search_text" value="找人、公共主页、游戏" tabindex="1" class="search_text" /><input type="button" value="" name="search_btn" class="search_btn" />
+					</form>
+				</div>
+				<!--search 结束处-->
+                
+                <!-- start -->
+                <div class="m_nav_bg">
+                    <ul class="m_nav">
+                      <li>
+                        <div class="bt"><a href="#" class="link"><span class="left mr5">通知</span><span class="n_notice left">3</span></a></div>
+                          <ul class="nr"> 
+                              <p><a href="#"><img src="../images/nav_ico001.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico002.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico003.png" width="16" height="16" />内容1</a></p> 
+                          </ul>
+                        </li>
+                      <li>
+                        <div class="bt"><a href="#" class="pt8 link">工具</a></div> 
+                          <ul class="nr"> 
+                              <p><a href="#"><img src="../images/nav_ico001.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico002.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico003.png" width="16" height="16" />内容1</a></p> 
+                          </ul>
+                        </li>
+                      	<li>
+                        <div class="bt"><a href="#" class="pt8 link">账号</a></div> 
+                          <ul class="nr"> 
+                              <p><a href="#"><img src="../images/nav_ico001.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico002.png" width="16" height="16" />内容1</a></p> 
+                              <p><a href="#"><img src="../images/nav_ico003.png" width="16" height="16" />内容1</a></p> 
+                          </ul>
+                        </li>
+                        <li><a href="#" class="mt8 link">退出</a></li>
+                    </ul>
+        		</div>
+                <!-- end -->
+                                
+			</div>
+		</div>
+		<!--header_warp 结束处-->
+		
+		<div class="content s_bg_r">
+			<div class="g_tabbig s_bgtitle">
+				<ul class="left s_bg_rl_curr">
+					<li class="g_tabf s_linecolor s_bgcolor current"><a href="mygroup.html">我的群</a></li>
+					<li class="s_linecolor s_bgcolor"><a href="group_public.html">公开群</a></li>
+					<li class="g_tabl s_linecolor s_bgcolor"><a href="group_recommend.html">推荐群</a></li>
+				</ul>
+				<div class="tabr_btn left"><a href="creatgroup.html">+创建群</a></div>
+			</div>
+			
+			<div class="main">
+				<div class="rl_cont2">
+					<div class="cont_warp">
+						<div class="rl_title">
+							<h2>创建群</h2>
+						</div>
+						<div id="create_group">
+							<div class="add_group_info">
+								<p><label>群名称<span class="red">*</span>：</label><input type="text" id="group_name"  class="s_input" placeholder="群名称不能多于20个字" /></p>
+								   <span id="name_info" style="display:none" class="tip_info"></span>								
+								<p class="p_textarea"><label class="group_brief_label">群简介<span class="red">*</span>：</label>
+									<textarea class="group_brief_area" id="group_desc"></textarea></p>
+								   <span id="brief_info" style="display:none" class="tip_info"></span>
+								<p><label>群标签：</label><input type="text" class="s_input" /></p>
+								<p class="lim_radio"><label>群类型：</label>
+									<span><input type="radio" class="s_radio" name="search_type" checked="checked" value='1'/>公开群(可被搜索到,所有人均可访问)</span>&nbsp;&nbsp;
+									<span><input type="radio" class="s_radio" name="search_type" value='0'/>私密群(不可被搜索到,仅限群成员访问)</span>
+								</p>
+								<p class="lim_radio"><label>访问控制：</label>
+									<span><input type="radio" class="s_radio" name="select1" checked="checked" value="0" />任何人</span>
+									<span><input type="radio" class="s_radio" name="select1" value="1" />成员访问</span>
+								</p>
+								<p class="lim_radio"><label>入群方式：</label>
+									<span><input type="radio" class="s_radio" name="select2" checked="checked" value="0" />申请即可加入</span>
+									<span><input type="radio" class="s_radio" name="select2" value="1" />申请并批准后加入</span>
+									<span><input type="radio" class="s_radio" name="select2" value="2" />成员邀请</span>
+								</p>
+								<p class="lim_radio"><label>群分类：</label>
+									<span><input type="radio" class="s_radio" name="select3" value="" checked="checked" />分类1</span>
+									<span><input type="radio" class="s_radio" name="select3" value=""  />招生分类</span>
+								</p>
+								<p class="btn_warp"><a class="g_btn">提交申请</a></p>
+							</div>
+						</div>
+
+				
+					</div>
+					<!--cont_warp end-->
+				</div>
+				<!--rl_cont end-->
+				
+				<div class="rr_cont">
+					<div class="rr_box05">
+						<h3><span class="left ml5 fb text_linka">注意事项</span></h3>
+						<div class="rr_box_cont">
+							<div class="s_bg3 note_info">
+								<p>1.管理员将审核每一个新创建的群组，并在2个工作日内给您答复；</p>
+								<p>2.群组创建者的荷苑小筑档案（包括个人肖像、姓名、教育背景）必须真实完整;</p>
+								<p>3.实名制群组中显示成员的真实姓名（成员必须填写真实姓名后方可加入），非实名制小组中显示成员的昵称</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--footer开始处-->
+		<div class="footer">
+			<div class="footer_cont">
+				<p><a href="#">用户协议</a> <a href="#">小筑故事</a> <a href="#">关于我们</a></p>
+				<p class="copyright">版权所有2011 &copy; 清华大学计算机与信息管理中心</p>
+			</div>		
+		</div>
+		<!--footer结束处-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+
+<title>招生组成员管理</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/zb.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog.js?skin=discuz&t=template_blue"></script>
+</head>
+
+<body class="bg_index">
+<script>
+	$(function(){
+		
+	})
+</script>
+	<!--warp开始处-->
+	<div class="warp">
+    
+		<!--header_warp开始处-->
+		<div class="header_warp"></div>
+		<!--header_warp 结束处-->
+        
+        
+		<!--content 开始处-->
+ 		<div class="content">
+                    
+            <!-- 左侧 start -->
+			<div class="l_cont">
+            	                
+                <div class="l_box04">
+                	<h1 class="mt3"><img src="../images/f_ico001.gif" width="15" height="14" /><span>招生组成员管理</span></h1>
+					<ul>
+						<li><a class="current" href="javascript:void(0)">北京招生组</a></li>
+						<li><a class="" href="javascript:void(0)">江苏招生组</a></li>
+					</ul>
+                </div>                                               
+            </div>
+            <!-- 右侧 end -->
+            
+            <!-- 右侧 start -->
+			<div class="r_cont">
+            	
+                <div class="rlr_cont">
+                    <div class="rl_box01">
+						<div class="tab_menu mb10">
+							<ul class="nabTag">
+								<li><a href="member_manage.htm" class="tag01"><span>全部</span></a></li>
+								<li><a href="menber_new.htm"><span>新增</span></a></li>
+							</ul>
+						</div>
+						<h3>
+							<p>
+							<span>学工号<input type="text" /></span>
+							<span>姓名<input type="text" /></span>
+                        	<span>性别<select><option>男</option><option>女</option></select></span>
+							<span>单位<input type="text" /></span>
+							</p>
+							<p>                            
+                            <span>招生组<select><option>北京</option></select></span>
+							<span>成员类别<select><option>招生教师</option></select></span>
+							<span>成员状态<select><option>正常</option></select></span>
+							<span>招生工作证号<input type="text" /></span>
+                            <a href="#" class="g_btn mb3">查询</a>
+							</p>
+                        </h3>
+						
+					</div>
+				   
+				    <div>
+						<div class="table_multi_btn">
+                            <a href="#" class="g_btn">补发注册邀请码</a>
+                            <a href="#" class="g_btn">审核通过</a>
+                            <a href="#" class="g_btn">审核不通过</a>
+						</div>
+						<table cellpadding="0" cellspacing="0" class="rc_tab01 list_table">
+							<tbody>
+								<tr class="data_sort">
+									<th style="width:4%"><input type="checkbox" /></th>
+									<th style="width:5%">序号</th>
+									<th>学工号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>单位</th>
+                                    <th>招生组</th>
+                                    <th>人员类别</th>
+                                    <th>人员状态</th>
+									<th>招生工作证号</th>
+								</tr>
+		
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>张三</td>
+                                    <td>女</td>
+                                    <td>航天航空学院</td>
+                                    <td>内蒙古</td>
+                                    <td>招生组长</td>
+									<td>正常</td>
+									<td>xxxxxxxxxxxxxxxx</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2000990101</td>
+                                    <td>王小件</td>
+                                    <td>男</td>
+                                    <td></td>
+                                    <td>内蒙古</td>
+                                    <td>招生组长</td>
+									<td>正常</td>
+									<td>xxxxxxxxxxxxxxxx</td>
+								</tr>
+								
+						  </tbody>
+					  </table>
+					 
+					  <div class="page" num="21">
+                        	<p class="left ml10">
+                        		<span class="mr10">每页显示
+                        			<select id="pernum" name="pernum">
+									   <option value="1" class="search_page">20</option>
+									   <option value="2" class="search_page">40</option>
+									   <option value="3" class="search_page">60</option>
+									   <option value="4" class="search_page">80</option>
+									   <option value="5" class="search_page">100</option>
+	                        		</select>条
+                        		</span>
+                       		共有413条记录，共21页，当前是第1页</p>
+                        	
+                          	<p class="right mr10">
+                         		<span class="generalgray"><< 第一页</span>
+                                <span class="generalgray">< 上一页</span>
+                          		<span><a class="search_page" page="next" href="javascript:void(0)">下一页 ></a></span>
+                              	<span><a class="search_page" num="21" page="21" href="javascript:void(0)">最后页 >></a></span>
+                          		<span>第<input id="page" name="" type="text" class="page_txt mlr5" value="1">页</span>
+                                <input name="" type="button" value="跳转" class="search_page">
+                            </p>
+                     </div>
+
+				 </div>
+                   
+                                        
+                </div>
+                <!-- rl end -->
+
+            </div>
+            <!-- 右侧 end -->
+            
+    	</div>
+		<!--content 结束处-->
+        
+		<!--footer 开始处-->
+			<div class="footer">
+				<div class="footer_cont">
+					<p><a href="#">用户协议</a> <a href="#">小筑故事</a> <a href="#">关于我们</a></p>
+					<p class="copyright">版权所有2011 &copy; 清华大学计算机与信息管理中心</p>
+				</div>		
+			</div>
+		<!--footer 结束处-->
+        
+	</div>
+	<!--warp 结束处-->
+    
+</body>
+</html>

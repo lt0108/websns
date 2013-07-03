@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+
+<title>注册邀请码管理</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/zb.css" type="text/css" rel="stylesheet"/>
+
+<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog.js?skin=discuz&t=template_blue"></script>
+</head>
+
+<body class="bg_index">
+<script>
+	$(function(){
+		$('#make_reg_code').click(function(){
+			var html = '<div class="alert_reg_code">'+
+							'<p><span>招生年度：</span><select><option>2013</option></select></p>'+
+							'<p class="mtb10"><span>人员类别：</span><select><option>招生教师</option></select></p>'+
+					   		'<p><span>每个组要生成的邀请码数量：</span><input type="text" class="s_input" /></p>'+
+					   '</div>';
+			$.dialog({
+				  title:'生成注册邀请码',
+				  content: html,
+				  max:false,
+				  min:false,
+				  ok: function(){
+				},
+				okVal: '生成',
+				cancelVal:'取消',
+				cancel: true
+			  });
+		})
+	})
+</script>
+	<!--warp开始处-->
+	<div class="warp">
+    
+		<!--header_warp开始处-->
+		<div class="header_warp"></div>
+		<!--header_warp 结束处-->
+        
+        
+		<!--content 开始处-->
+ 		<div class="content">
+                    
+            <!-- 左侧 start -->
+			<div class="l_cont">
+            	                
+                <div class="l_box04">
+                	<h1 class="mt3"><img src="../images/f_ico001.gif" width="15" height="14" /><span>招生年度管理</span></h1>
+					<ul>
+						<li><a class="current" href="javascript:void(0)">北京招生组</a></li>
+						<li><a class="" href="javascript:void(0)">江苏招生组</a></li>
+					</ul>
+                </div>                                               
+            </div>
+            <!-- 右侧 end -->
+            
+            <!-- 右侧 start -->
+			<div class="r_cont">
+            	
+                <div class="rlr_cont">
+                    <div class="rl_box01">
+						<h3 style="height: 40px;">
+							<div class="left">
+                        	<span>招生年度<select><option>2013</option></select></span>
+                            <span>人员类别<select><option>招生教师</option></select></span>
+                            <span>招生组<select><option>北京</option></select></span>
+                            <a href="#" class="g_btn">查询</a>
+                            <a href="#" class="g_btn">删除</a>
+                            <a href="#" class="g_btn">导出为Excel</a>
+							</div>
+                            <a href="#" class="right" id="make_reg_code">生成注册邀请码</a>
+                        </h3>
+						
+					</div>
+				   
+				    <div>
+						<table cellpadding="0" cellspacing="0" class="rc_tab01 list_table">
+							<tbody>
+								<tr class="data_sort">
+									<th style="width:4%"><input type="checkbox" /></th>
+									<th style="width:5%">序号</th>
+									<th>招生年度</th>
+                                    <th>人员类别</th>
+                                    <th>招生组</th>
+                                    <th>注册邀请码</th>
+                                    <th>使用人数</th>
+                                    <th>下发次数</th>
+                                    <th>生成人</th>
+									<th style="width:20%">生成时间</th>
+								</tr>
+		
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>1</td>
+									<td>2013</td>
+                                    <td>招生教师</td>
+                                    <td>北京</td>
+                                    <td>xxxx-xxxx-xxxx-xxxx</td>
+                                    <td>20</td>
+                                    <td>10</td>
+									<td>张三</td>
+									<td>2013-04-09 18:03:29</td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" /></td>
+									<td>2</td>
+									<td>2013</td>
+                                    <td>招生教师</td>
+                                    <td>北京</td>
+                                    <td>xxxx-xxxx-xxxx-xxxx</td>
+                                    <td>20</td>
+                                    <td>10</td>
+									<td>张三</td>
+									<td>2013-04-09 18:03:29</td>
+								</tr>
+						  </tbody>
+					  </table>
+					 
+					  <div class="page" num="21">
+                        	<p class="left ml10">
+                        		<span class="mr10">每页显示
+                        			<select id="pernum" name="pernum">
+									   <option value="1" class="search_page">20</option>
+									   <option value="2" class="search_page">40</option>
+									   <option value="3" class="search_page">60</option>
+									   <option value="4" class="search_page">80</option>
+									   <option value="5" class="search_page">100</option>
+	                        		</select>条
+                        		</span>
+                       		共有413条记录，共21页，当前是第1页</p>
+                        	
+                          	<p class="right mr10">
+                         		<span class="generalgray"><< 第一页</span>
+                                <span class="generalgray">< 上一页</span>
+                          		<span><a class="search_page" page="next" href="javascript:void(0)">下一页 ></a></span>
+                              	<span><a class="search_page" num="21" page="21" href="javascript:void(0)">最后页 >></a></span>
+                          		<span>第<input id="page" name="" type="text" class="page_txt mlr5" value="1">页</span>
+                                <input name="" type="button" value="跳转" class="search_page">
+                            </p>
+                     </div>
+
+				 </div>
+                   
+                                        
+                </div>
+                <!-- rl end -->
+
+            </div>
+            <!-- 右侧 end -->
+            
+    	</div>
+		<!--content 结束处-->
+        
+		<!--footer 开始处-->
+			<div class="footer">
+				<div class="footer_cont">
+					<p><a href="#">用户协议</a> <a href="#">小筑故事</a> <a href="#">关于我们</a></p>
+					<p class="copyright">版权所有2011 &copy; 清华大学计算机与信息管理中心</p>
+				</div>		
+			</div>
+		<!--footer 结束处-->
+        
+	</div>
+	<!--warp 结束处-->
+    
+</body>
+</html>

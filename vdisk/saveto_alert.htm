@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<!-- IE8 兼容 -->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<title>保存到网盘</title>
+
+<link href="../css/common.css" type="text/css" rel="stylesheet" />
+<link href="../css/skin.css" type="text/css" rel="stylesheet" />
+<link href="../css/diy.css" type="text/css" rel="stylesheet"/>
+<link href="../css/vdisk.css" type="text/css" rel="stylesheet"/>
+<script src="../js/ie_png.js" language="javascript"></script>
+<script src="../js/jquery-1.4.2.min.js" language="javascript"></script>
+</head>
+
+<body>
+<script type="text/javascript">
+$(function(){
+	//此处js效果只为示范，具体实现时，点击文件夹也可展开和搜索
+	$(".arrow_down").live('click',function(){
+		$(this).siblings(".folder_in").show();
+		$(this).removeClass("arrow_down").addClass("arrow_up");
+	});
+	$(".arrow_up").live('click',function(){
+		$(this).siblings(".folder_in").hide();
+		$(this).removeClass("arrow_up").addClass("arrow_down");
+	});
+	
+	
+	//新建文件夹，此处js中所使用class名皆只为示范效果临时所取，在css中未使用。可移除或修改
+	$(".add_newfolder").click(function(){
+		$(this).hide();
+		$(".new_input_warp").show();
+	});
+	
+	$(".new_input_warp .cancle").click(function(){
+		$(this).closest(".new_input_warp").hide();
+		$(".add_newfolder").show();
+	})
+});
+</script>
+
+	<div class="save_warp">
+		<div class="save_tree_txt">
+			<span class="left">请选择保存目录</span>
+			<div class="right">
+				<a href="#" class="add_newfolder">新建文件夹</a>
+				<div class="new_input_warp" style="display:none">
+					<input type="text" name="" class="inp" />
+					<a href="#" class="g_btn">确定</a>
+					<a href="#" class="g_btn1 cancle">取消</a>
+				</div>
+			</div>
+		</div>
+		<div class="save_tree_warp">
+			<div class="folder_in">
+				<img src="../images/vd_folder-icon.png" />
+				<a href="#"><span>我的网盘</span></a>
+			</div>
+			
+			<div class="main_tree">
+				<!-- 含两级子目录-->
+				<div class="folder_in">
+					<span class="arrow_down"></span>
+					<span class="folder_icon"></span>
+					<a href="#"><span class="current">1一级目录(含两级子目录)</span></a>
+					<div class="folder_in"  style="display:none">
+						<div class="folder_in">
+							<span class="arrow_down"></span>
+							<span class="folder_icon"></span>
+							<a href="#"><span>二级目录</span></a>
+							<div class="folder_in" style="display:none">
+								<div class="folder_in">
+									<span class="arrow_none"></span>
+									<span class="folder_icon"></span>
+									<a href="#"><span>三级目录</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 含一级子目录-->
+				<div class="folder_in">
+					<span class="arrow_up"></span>
+					<span class="folder_icon"></span>
+					<a href="#"><span>2父类(含一级子目录)</span></a>
+					<div class="folder_in">
+						<div class="folder_in">
+							<span class="arrow_none"></span>
+							<span class="folder_icon"></span>
+							<a href="#"><span>一级子类</span></a>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 无子目录-->
+				<div class="folder_in">
+					<span class="arrow_none"></span>
+					<span class="folder_icon"></span>
+					<a href="#"><span>3无子类</span></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="btn">
+			<a href="#" class="g_btn">保存到网盘</a>
+		</div>
+	</div>
+	
+    
+</body>
+</html>

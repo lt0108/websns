@@ -1,0 +1,139 @@
+
+/*左右两栏结构，rl_cont与父级r_cont宽度相等*/
+.rl_cont{ width:100%}
+
+/******* 左侧列表*******/
+.l_box04 { width:140px; margin:0 auto; overflow:hidden; clear:both; zoom:1; }
+.l_box04 h1 { height:25px; line-height:25px; overflow:hidden; clear:both; text-align:left; }
+.l_box04 h1 span { font-size:14px; margin-left:5px;}
+
+.l_box04 ul { margin:1px 0; clear:both; }
+.l_box04 ul li { height:22px; line-height:22px; margin-bottom:1px;}
+.l_box04 ul li a { width:120px; height:22px; line-height:22px; padding-left:20px; display:block; text-decoration:none; }
+
+
+
+
+
+/******* 右侧白色区域样式 *******/
+
+/* 右部左侧样式 */
+/* rl_box01 右侧上部，提示文字 */
+.rl_box01 { margin:0 17px; overflow:hidden; clear:both; zoom:1; }
+.rl_box01 h3 { height:30px; line-height:30px; text-align:left; margin-bottom:5px; border-bottom-style:solid;border-bottom-width:1px;}
+.rl_box01 h3 span { font-size:14px; font-weight:bold; }
+
+
+
+
+/* rr_box02_cont */
+.rr_box02_cont { margin:8px 17px; overflow:hidden; clear:both; zoom:1; }
+
+/**账号绑定，提示文字*/
+.r_box_fbt { line-height:30px; text-align:left; }
+
+/*个人标签*/
+.r_box_bg { padding:10px 10px 15px; border-style:solid;border-width:1px; overflow:hidden; clear:both; zoom:1; }
+.r_box_bg h5 { line-height:24px; text-align:left; margin-bottom:5px; }
+	/*个人标签，我的标签按钮*/
+.r_btn {  overflow:hidden; clear:both; zoom:1; }
+.r_btn li { line-height:22px; padding:0 10px; display:inline; float:left; margin-right:5px; margin-bottom:5px; background:#fff; border:1px solid #ccc;; }
+.r_btn li a { width:10px; height:22px; line-height:22px; text-decoration:none; margin-left:5px; display:block; text-align:center; background:url(../images/p_close.gif) 0 center no-repeat; }
+.r_btn li a:hover { background:url(../images/p_close_h.gif) 0 center no-repeat; text-decoration:none; }
+
+/* r_box_notice 标签说明文字*/
+.r_box_notice { margin:8px 10px; overflow:hidden; clear:both; zoom:1;  }
+.r_box_notice h4 { line-height:24px; text-align:left; font-weight:bold; }
+.r_box_notice ul li { line-height:20px; background:url(../images/v_dot.gif) 5px 8px no-repeat; padding-left:15px; }
+
+
+
+/* 教育信息，已添加信息 r_box_bt_bg */
+.r_box_bt_bg { margin-bottom:10px; line-height:24px; border-style:solid;border-width:1px; overflow:hidden; clear:both; zoom:1; }
+
+
+
+/* 基本信息 r_tab_01 */
+.r_tab_01 { width:100%; margin:0 auto; }
+.r_tab_01 tr th { width:15%; line-height:30px; text-align:right; padding-right:5px; vertical-align:top; font-size: 16px;font-weight: normal;}
+.r_tab_01 tr td { line-height:30px; text-align:left; padding-left:5px; font-size: 14px;}
+.r_tab_01 tr td input {  font-size: 14px;}
+.set_date {width:60px; text-align: center;}
+
+
+
+/* 上传头像 r_box_pic */
+.r_box_pic { margin:20px auto; overflow:hidden; clear:both; zoom:1; }
+
+.l_pic { width:329px; float:left; display:inline; overflow:hidden; text-align:left; border-right-style:solid; border-right-width:1px; }
+.c_pic { width:230px; float:left; display:inline; overflow:hidden; }
+.c_pic p { margin:0 20px; }
+.r_pic { width:110px; float:left; display:inline; overflow:hidden; }
+.r_pic p { margin:0 20px; }
+
+.l_pic img { width:300px; height:300px; }
+.c_pic img { width:140px; height:140px; }
+.r_pic01 img { width:50px; height:50px; }
+.r_pic02 img { width:30px; height:30px; }
+
+
+
+/* rr_box02_cont:公共主页，管理员管理页面 personadmin */
+
+.r_box02_img { width:50px; overflow:hidden; float:left; }
+.r_box02_img img,.r_box02_img2 img { width:50px; height:50px; margin-top:3px;}
+
+.r_box02_img2 { width:50px; overflow:hidden; float:right; }
+
+.r_box02_cont { margin-left:60px; overflow:hidden; text-align:left;} 
+.r_box02_cont p { line-height:20px; text-align:left; vertical-align:middle; }
+.r_box02_cont p a img { margin-top:-2px; }
+
+
+
+.g_tab01_line2 { margin:15px auto;}
+.g_tab01_line { width:140px; height:1px; margin:10px auto 0;}
+.g_tab01_line4 { margin:5px 17px; }
+
+.g_text { width:250px; height:20px; line-height:20px;}
+.hidden {display:none;}
+
+
+
+/********************* 系统通知 *************************/
+.p_notice { margin:0 auto; padding:0 0 8px; text-align:left; border-bottom-style:solid;border-bottom-width:1px; overflow:hidden; clear:both; zoom:1; }
+.p_notice dt { float:left; width:134px; padding:5px; margin:6px 0 0; overflow:hidden; }
+.p_notice dt:hover { /*background:#f1f1f1;*/ }
+.p_notice dd { line-height:18px; margin-left:160px; padding:9px 0 0; }
+.p_notice .g_btn { line-height:18px!important; }
+.p_notice dd .list li {   margin: 8px 0 0;  padding: 8px 0 0;}
+
+	/* 左侧图片 */
+.pf_l { float:left; }
+.pf_l img { width:30px; height:30px; }
+.pf_r { margin:0 0 5px 40px; }
+
+.p_nr { margin:0 120px 0 0; }
+
+.p_link { line-height:18px; text-align:right; overflow:hidden; }
+.p_link a:hover { text-decoration:none!important; }
+
+.s_menu1_br li { border-top-style:dotted;}
+
+
+/******修改密码*******/
+.info_tab th, .info_tab td { font-size:14px; padding-bottom:15px; }
+.info_tab th{  line-height:28px; width:80px; font-weight:normal; text-align:right; vertical-align:top; white-space: nowrap;}
+.info_tab td .pw_input {height: 26px;line-height: 26px;width: 214px;font-size: 14px;border: 1px solid #CCC;padding: 0 3px;}
+
+
+
+.info_tab .tab_row { line-height:28px;  font-size:14px; padding-bottom:15px; overflow:hidden;}
+.info_tab .tab_title{  float:left; width:80px; font-weight:normal; text-align:right; vertical-align:top; white-space: nowrap;}
+.info_tab .tab_input { float:left;}
+.info_tab .tab_input input { height: 26px;line-height: 26px;width: 214px;font-size: 14px;border: 1px solid #CCC;padding: 0 3px;}
+.info_tab .tab_info { float:left; font-size:12px; margin-left: 10px;}
+.info_tab .focus_info { border-radius: 5px; padding:0 8px; background: #F1FFD4; display: block;}
+.info_tab .error_info { border-radius: 5px; padding:0 25px; background: #FFDBDB url(../images/setting_error.png) no-repeat 6px 6px; display:block;}
+
+.tab_btn { padding-left:80px; padding-bottom:15px; text-align:left;}

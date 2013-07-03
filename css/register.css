@@ -1,0 +1,40 @@
+/*³ÉÔ±×¢²á*/
+a { color:#68125B;}
+.bg_index { background: #E1D8F3;}
+.warp { background: url(../images/body_bg_zi.jpg) 50% 0 no-repeat;}
+.content { margin-top:20px; min-height:600px; background:#fff;}
+
+.reg_txt { padding: 20px 0 10px 30px; text-align: left;line-height: 24px;font-size: 14px;}
+
+/* rc_tab01 */
+.rc_tab01 { width:94%; border-collapse:collapse; margin:10px auto; }
+.rc_tab01 tr:hover { background:#fbf2ed; }
+.rc_tab01 tr th { height:34px; line-height:20px; text-align:left; color:#702b82; font-weight:bold; background:#faf5fb; border-top:#c7a3cd 1px solid; border-right:#c7a3cd 1px solid; border-bottom:#c7a3cd 2px solid; padding-left:5px; }
+.rc_tab01 tr td { height:34px; line-height:30px; text-align:left; color:#000; padding-left:5px; border-right:#d3d7d8 1px solid; border-bottom:#d3d7d8 1px solid; }
+
+.vertical_tab tr th{ width:124px; border: 1px solid #D3D7D8; font-weight:normal; text-align: right; padding-right: 7px;}
+.vertical_tab tr td{ border: 1px solid #D3D7D8;}
+.vertical_tab tr td input { background: #FFF;padding: 0 0 0 5px;border: 1px solid #CCC;height: 23px;border-radius: 3px; width:200px;}
+.vertical_tab tr td textarea { background:#fff; margin: 7px 0;border: 1px solid #CCC; overflow-y:auto;}
+.tip_num { margin-left:15px; }
+
+.regsub_btn_warp { margin:20px 0;}
+.sub_btn{ color:#FFF; border:solid 1px #AA4CF3; text-shadow: 0 -1px 1px #AA4CF3; background:#814985;
+padding:8px 40px;
+line-height: 30px;
+display: inline-block;
+font-size: 26px;
+font-family: Î¢ÈíÑÅºÚ;
+text-decoration:none;
+background:linear-gradient(top, #AA4CF3, #814985);
+background:-moz-linear-gradient(top, #AA4CF3, #814985);
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#AA4CF3), to(#814985));
+background:-o-linear-gradient(top, #AA4CF3, #814985);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#AA4CF3', endColorstr='#814985'); }
+.sub_btn:hover{ color:#FFF; border-color:#ADADAD; text-decoration:none; }
+
+/*ÌîÐ´×¢²áÂë*/
+.input_regcode_warp { margin: 150px auto 0; font-size: 26px;}
+.input_regcode input { width: 250px; font-size: 22px; background: #FFF;padding: 0 0 0 5px;border: 1px solid #CCC;height: 38px;border-radius: 3px;}
+.input_regcode .tip_info { font-size:14px; color:#777; margin-left:10px;}
+.regcode_btn_warp { margin-top: 30px;}

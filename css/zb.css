@@ -1,0 +1,184 @@
+
+/* 左右结构 */
+.rlr_cont { width:100%; min-height:680px;background:#fff; padding:15px 0; text-align:center; float:left; overflow:hidden; }
+
+.rl_cont {min-height: 668px; width:535px; background:#fff; padding:15px 0; text-align:center; float:left; overflow:hidden; }
+.rr_cont { width:244px; padding:15px 0; border-left:#eff3f4 1px solid; text-align:left; float:left; overflow:hidden; }
+.cont { background:#fff;}
+/*
+.rl_cont{ width:100%}*/
+
+/******* 左侧列表*******/
+.l_box04 { width:140px; margin:0 auto; overflow:hidden; clear:both; zoom:1; }
+.l_box04 h1 { height:25px; line-height:25px; overflow:hidden; clear:both; text-align:left; }
+.l_box04 h1 span { font-size:14px; margin-left:5px;}
+
+.l_box04 ul { margin:1px 0; clear:both; }
+.l_box04 ul li { height:22px; line-height:22px; margin-bottom:1px;}
+.l_box04 ul li a { width:120px; height:22px; line-height:22px; padding-left:20px; display:block; text-decoration:none; }
+
+
+
+/******* 右侧白色区域样式 *******/
+
+/* 右部左侧样式 */
+/* rl_box01 */
+.rl_box01 { margin:0 17px; overflow:hidden; clear:both; zoom:1; }
+.rl_box01 h3 { line-height:30px; text-align:left; margin-bottom:5px;padding-bottom: 5px; border-bottom:#e4e4e4 1px solid; color:#333; clear:both;overflow:hidden; }
+.rl_box01 h3 span { font-size:14px; font-weight:bold; margin-right: 10px;}
+.rl_box01 h3 select {  margin-left:3px; margin-bottom:3px; *margin-bottom:0;margin-bottom:0\9;}
+.rl_box01 h3 input { margin-left:3px; margin-bottom:3px;*margin-bottom:0;}
+
+/* 右侧标题 */
+.r_box_title { margin:0 17px 15px; line-height:25px; background:#f4f4f4; border-top:#e1e1e1 1px solid; text-align:left; overflow:hidden; clear:both; zoom:1; }
+.r_box_title span { margin-left:10px; font-weight:bold; color:333; }
+
+
+
+/* 右侧区块 */
+.rr_box02_cont { margin:8px 17px; overflow:hidden; clear:both; zoom:1; }
+
+
+/* 分割线 */
+.p_line { margin:15px 0; border-top:#f5f5f5 1px solid; border-bottom:#fff 1px solid; overflow:hidden; clear:both; }
+
+
+
+/* 文字内容 */
+.zb_list { text-indent:24px; line-height:30px; color:#454545; text-align:left; overflow:hidden; clear:both; zoom:1; *margin-top:-30px; }
+.zb_list p { margin-bottom:15px; }
+
+.zb_list p a { text-decoration:underline; }
+.zb_list p a:hover { color:#999; }
+
+
+
+/* rc_tab01 */
+.rc_tab01 { width:96%; border-collapse:collapse; margin:10px auto; }
+.rc_tab01 tr:hover { background:#fbf2ed; }
+.rc_tab01 tr th { height:30px; line-height:30px; text-align:left; color:#702b82; font-weight:bold; background:#faf5fb; border-top:#c7a3cd 1px solid; border-right:#c7a3cd 1px solid; border-bottom:#c7a3cd 2px solid; padding-left:5px; }
+.rc_tab01 tr td { height:30px; line-height:30px; text-align:left; color:#000; padding-left:5px; border-right:#d3d7d8 1px solid; border-bottom:#d3d7d8 1px solid; }
+
+.rc_cr { border-right:none!important; }
+.rc_trb td { border-bottom:#c7a3cd 1px solid!important; }
+
+
+
+/* 输入框 */
+.zb_txt { width:60px; margin-left:5px; margin-right:15px; }
+
+/* massage */
+.dialog2 { padding:5px; background-color:rgba(0, 0, 0, 0.2); *background-color: #ccc; background-color: #ccc\9; overflow:hidden; clear:both; zoom:1; }
+
+.g_new_massage { background:#fff; border:#ccc 1px solid; overflow:hidden; clear:both; zoom:1; }
+.g_new_massage h4 { margin:0 auto; height:28px; line-height:28px; background:#f4f4f4; border-top:#e1e1e1 1px solid; clear:both; overflow:hidden; zoom:1; }
+
+/* close_btn */
+.g_close_btn { width:14px; height:28px; float:right!important; margin-right:5px; line-height:28px; display:block; }
+.g_close_btn a { width:14px; height:28px; display:block; background:url(../images/v_close.gif) center center no-repeat; text-decoration:none; }
+.g_close_btn a:hover { text-decoration:none; background:url(../images/v_close.gif) center center no-repeat!important; }
+
+
+/* massage_cont */
+.massage_cont { background:#f5f5f5; border:#ccc 1px solid; margin:10px; padding:5px; text-align:left; overflow:hidden; clear:both; zoom:1; }
+
+
+/* cont_text */
+.cont_text { margin:0 10px; padding:0 5px; text-align:left; overflow:hidden; clear:both; zoom:1; }
+.cont_text label { margin-right:5px; }
+.cont_text input { border:#ccc 1px solid; }
+.cont_text textarea { border:#ccc 1px solid; }
+
+
+/* massage_txt */
+.massage_tab { width:100%; overflow:hidden; clear:both; zoom:1; }
+.massage_tab tr td { line-height:26px; text-align:left; }
+
+.w100 { width:100px; text-align:right!important; }
+.w_100 { width:100%; }
+.w_49 { width:49%; }
+.w70 { width:70px; text-align:right!important; vertical-align:top;}
+.o_text { width:80%; height:18px; line-height:18px; color:#888; }  /*zc:2011-12-20 width值*/
+
+
+.o_bq a { line-height:22px; padding:0 8px; margin-right:5px; display:inline-block; background:#f8f8f8; border:#eee 1px solid; text-decoration:none; width:75px;} /*zc:2011-12-20 width值*/
+.o_bq a:hover { background:#f1f1f1; border:#ddd 1px solid; text-decoration:none; }
+
+
+/* g_new_massage_btn */
+.massage_btn { margin:20px auto 0; padding:5px 0; background:#f5f5f5; overflow:hidden; clear:both; zoom:1; }
+
+
+/* 进度条 */
+.rr_box_jd { width:454px; margin:10px auto 30px; overflow:hidden; clear:both; zoom:1; }
+
+/* rr_box_jd_txt */
+.rr_box_jd_txt { clear:both; }
+.rr_box_jd_txt li { width:112px; height:22px; line-height:22px; float:left; text-align:center; font-size:14px; }
+
+
+
+/* rr_box_jd_pic */
+.rr_box_jd_pic { width:454px; height:14px; background:url(../images/jd_gray_bg.png) no-repeat; overflow:hidden; clear:both; }
+.rr_box_jd_pic li { width:113px; height:14px; float:left; }
+
+.jd_yellow { background:url(../images/jd_yellow.png) no-repeat; }
+.jd_purple { background:url(../images/jd_purple.png) no-repeat; }
+
+
+
+/* page */
+.page { height:30px; line-height:30px; overflow:hidden; zoom:1; clear:both; margin:0 1px 10px; }
+.page p { color:#626262; }
+.page p span { margin-right:8px; }
+.page_txt { width:20px; }
+
+
+/*招生年度管理*/
+.cont_warp{ text-align:left; margin:0 10px; line-height:20px; padding-bottom:10px;}
+.rec_title { padding-left: 15px;line-height: 27px;font-size: 14px;font-weight: bold;}
+.reg_txt{ padding:20px 10px 0; font-size: 14px;}
+
+.s_input{background: #FFF;padding: 0 0 0 5px;border: 1px solid #CCC;height: 20px;border-radius: 3px;}
+.mlr30 { margin:0 30px;}
+.mb3 { margin-bottom:3px;}
+
+/*注册码邀请*/
+.alert_reg_code { width: 290px;}
+.alert_reg_code p span { display:inline-block; width:156px; text-align:right; }
+.alert_reg_code .s_input { width:40px;}
+
+/*招生组成员管理*/
+.table_multi_btn { margin:5px 17px; text-align:left;}
+.table_center_btn { text-align:center; margin:30px 0;}
+
+/*新增成员弹出框*/
+.r_tab_01 {}
+.r_tab_01 tr th {  line-height:30px; text-align:right; padding-right:5px; vertical-align:top; font-size: 14px;font-weight: normal;}
+.r_tab_01 tr td { line-height:30px; text-align:left; padding-left:5px; font-size: 14px;}
+.r_tab_01 tr td input {  font-size: 14px; height: 20px; padding-left: 2px;}
+.r_tab_01 .tip_info { font-size:12px; margin-left:5px; color:#777;}
+
+.box_check { margin:15px 0; font-size:14px; text-align:center;}
+
+
+/*成员注册*/
+.vertical_tab tr th{width:100px; border: 1px solid #D3D7D8; font-weight:normal;}
+.vertical_tab tr td{border: 1px solid #D3D7D8;}
+
+.input_regcode_warp { margin: 150px auto 0; font-size: 26px;}
+.input_regcode input { width: 250px; font-size: 22px; background: #FFF;padding: 0 0 0 5px;border: 1px solid #CCC;height: 38px;border-radius: 3px;}
+.input_regcode .tip_info { font-size:14px; color:#777; margin-left:10px;}
+.regcode_btn_warp { margin-top: 30px;}
+
+/*招生教师注册审核*/
+.info_tab tr { border: 1px solid #CCC;line-height: 25px;height: 30px;}
+.info_tab th { min-width:30px;font-weight: normal;text-align: right;padding:0 5px!important;}
+.info_tab td { min-width: 50px; max-width:500px; padding:0 5px!important; border: 1px solid #CCC;}
+.link_change { display:inline; margin-left:30px;}
+.link_change span { color:#777; margin:0 10px;}
+
+
+
+
+

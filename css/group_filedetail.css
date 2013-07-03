@@ -1,0 +1,102 @@
+/*********文件预览详细页***********/
+/*左右两栏，左宽右窄*/
+.v_left{ width:719px;float:left; min-height:700px; background:#fff; text-align:left;border-right: 1px solid #DCDDDD;}
+.v_right { float:left; height:500px; width:230px; text-align:left;}
+
+.v_detail_info { padding: 0 15px;}
+.share_menu_link { padding:30px 0 0; font-size:15px;}
+.share_menu_link span { padding:0 8px;}
+
+/**左侧，文件名称等基本信息*/
+.down_fileinfo { padding: 18px 0 9px 0;text-align: left;overflow: hidden;border-bottom: 1px solid #DCDDDD;}
+.down_filename { font-size:16px; font-weight:bold; line-height:22px; margin-top: 10px;}
+.down_filesize { font-size:13px; font-weight:normal; margin-left:10px;}
+.down_baseinfo { float:right; margin-top:10px;}
+
+/**左侧，文件内容*/
+.file_content { padding:10px 0;}
+
+/*无法提供预览的提示信息*/
+.v_nobrowser { border: 1px solid #EEE; margin:10px 0; padding:20px; text-align:center; font-size:22px;color: #CCC;line-height: 55px;font-weight: bold;}
+
+
+.file_info_warp { line-height: 24px; }
+.file_info_warp .info_item { margin-bottom: 5px;}
+.file_info_warp .info_item .label{ width: 65px;float: left;white-space: nowrap;}
+.file_info_warp .info_item .con { margin-left: 65px; word-wrap: break-word;}
+
+.score_warp { float:left; }
+.score_warp .score_level { display:inline-block;}
+.score_warp .score_level li { display:inline-block; }
+.score_state {}
+
+.zan_warp { float:right;}
+
+
+/*左侧，保存和下载按钮*/
+.download_btn { text-align:left; margin-top:10px;}
+.download_btn a { padding: 5px 20px;font-size: 16px;font-weight: bold; margin-left: 20px;}
+
+/*左侧，相关文档推荐*/
+.v_suggest { padding:50px 20px;}
+.v_suggest_title {margin: 0 0 5px 0;padding-left: 10px;font-size: 14px;font-weight: bold;line-height: 24px;}
+.v_suggest li {padding: 6px 10px;line-height: 18px;overflow: hidden;}
+.v_suggest_downtxt { float:right;}
+.v_suggest_downtxt span { font-weight: bold;margin-right: 5px;}
+.v_suggest .vd_icon16 { float:left;margin:0px;}
+
+	/*文档类型图标，16px小图标*/
+.vd_icon16 {	background: url(../images/vd_icon_16.png) no-repeat;	display: inline-block;	padding-left: 20px;	line-height: 18px;margin: 8px 1px 0 1px;}
+.vd_16cd {	background-position: 0 -1093px}
+.vd_16csv {	background-position: 0 -229px}
+.vd_16doc {	background-position: 0 -275px}
+.vd_16docx { background-position: 0 -46px}
+.vd_16dvd {	background-position: 0 0}
+.vd_16eif {	background-position: 0 -137px}
+.vd_16exe {	background-position: 0 -183px}
+.vd_16flv {	background-position: 0 -91px}
+.vd_16folder {	background-position: 0 -590px}
+.vd_16folder_mobile {	background-position: 0 -454px}
+.vd_16folder_page {	background-position: 0 -544px}
+.vd_16folder_picture {	background-position: 0 -321px}
+.vd_16folder_sina {	background-position: 0 -367px}
+.vd_16html {	background-position: 0 -411px}
+.vd_16music {	background-position: 0 -1139px}
+.vd_16other {	background-position: 0 -498px}
+.vd_16pdf {	background-position: 0 -679px}
+.vd_16pic {	background-position: 0 -633px}
+.vd_16ppt {	background-position: 0 -955px}
+.vd_16rar {	background-position: 0 -909px}
+.vd_16rtf {	background-position: 0 -863px}
+.vd_16txt {	background-position: 0 -817px}
+.vd_16video { background-position: 0 -771px}
+.vd_16wps {	background-position: 0 -725px}
+.vd_16xls {	background-position: 0 -1047px}
+.vd_16zip {	background-position: 0 -1001px}
+.vd_16apk {	background-position: 0 -1245px}
+.vd_16ipa {	background-position: 0 -1300px}
+.vd_16xap {	background-position: 0 -1352px}
+.vd_16swf {	background-position: 0 -1402px}
+.vd_16book { background-position: 0 -1192px}
+
+	/**筛选显示不同类型文件的图标,中图标，32px**/
+.vd_icon {width: 32px;height: 32px;background: url(../images/vd_icon_32.png) no-repeat;line-height: 0;font-size: 0;display: inline-block;}
+.vd_cd {	background-position: 0 -970px}
+.vd_csv {	background-position: 0 -210px}
+.vd_doc {	background-position: 0 -252px}
+.vd_docx {	background-position: 0 -42px}
+
+
+
+/*右侧分享者信息*/
+.share_info_txt{ padding:20px 0 20px 20px;}
+.v_person_info { padding: 0 20px 18px;}
+.v_person_info dt { float:left; display:inline;}
+.v_person_info dd { margin:0 0 0 60px; line-height:20px;}
+
+/*右侧模块，通用*/
+.v_right_module { padding:20px 0 0;margin: 0 20px; border-top: 1px dotted #ccc;}
+.v_right_module .title{ padding: 0 0 8px;}
+.v_right_module li { height:30px; line-height:24px;}
+	/*Ta的分享列表，单独样式*/
+.my_share { padding-top:0;padding-bottom: 10px;border: 0;}
